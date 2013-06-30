@@ -3,7 +3,7 @@ layout: post
 title: "Feeling excited with my first post"
 date: 2013-06-30 18:42
 comments: true
-categories: 
+categories: python
 ---
 
 Feeling great having posted my first blog.
