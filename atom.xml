@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-06-30T19:19:41+05:30</updated>
+  <updated>2013-06-30T19:35:06+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MOOC]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/06/30/mooc/"/>
+    <updated>2013-06-30T19:25:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/06/30/mooc</id>
+    <content type="html"><![CDATA[<p>MOOC (Massive Open Online Courses) are becoming quite popular these days due to its free and worldwide availability. Some of them are Coursera and edx. Among these coursers has a lot of courses from various universities. You can take any course and obtain a statement of accomplishment. During the course you are to attend quizzes and do projects every week which account for the total credit you obtain for the course. Courses in coursera are very useful and most of them are self contained meaning they don&rsquo;t have any prerequisites and no study material is required. You could either view the videos on the site or you can download them to the local system and watch.</p>
+
+<p>MOOC&rsquo;s are the future. Because everyone has the opportunity to quality education and that too free. The only requirement is a system with internet connectivity.</p>
+
+<p>Students all over the world are using these websites. So the discussion forums are very active. Some courses have peer assessment which is great.</p>
+
+<p>Note: MOOC are nowhere near to the courses offered in those universities and the certificates are just a statement of accomplishment. Coursera is trying to get accredit ion for some of its courses.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Feeling excited with my first post]]></title>
