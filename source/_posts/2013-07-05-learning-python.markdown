@@ -3,7 +3,7 @@ layout: post
 title: "learning python"
 date: 2013-07-05 23:48
 comments: true
-categories: 
+categories: python
 ---
 
 There are a lot of ways to learn python
