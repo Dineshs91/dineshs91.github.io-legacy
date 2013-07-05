@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-01T13:12:50+05:30</updated>
+  <updated>2013-07-05T23:55:05+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[learning python]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/05/learning-python/"/>
+    <updated>2013-07-05T23:48:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/07/05/learning-python</id>
+    <content type="html"><![CDATA[<p>There are a lot of ways to learn python</p>
+
+<p>The first way is to learn from the python official website &lsquo;python.org&rsquo;. Check the documentation section for tutorials. These tutorials are great and is a very good starting  point. All the basic concepts are there with sample examples.And the great thing about python is you can run the code in the terminal itself without having to create a new file each time you want to test a code. Just type python in terminal and you have an interpreter. You can run all the commands there.</p>
+
+<p>Next have a look at &lsquo;learnpythonthehardway&rsquo; site. It also provides some good tutorials.</p>
+
+<p>After learning the basics check this site &ldquo;<a href="http://code.activestate.com/recipes/langs/python/">http://code.activestate.com/recipes/langs/python/</a>&rdquo;. It has great python programs. Learn from others code look what libraries they are using. The best to way learn programming is by looking at others code and learn.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MOOC]]></title>
