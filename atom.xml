@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-05T23:55:05+05:30</updated>
+  <updated>2013-07-06T00:01:11+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Python]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/05/python/"/>
+    <updated>2013-07-05T23:59:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/07/05/python</id>
+    <content type="html"><![CDATA[<p>Python is an awesome scripting language. If you start learning python then you can wave goodbye to braces. Python is all about indentation. Python code is very clear and easy to understand. There are two versions of python you can choose from python 2 and python 3. Python 3 is the latest one but python 2 is also receiving updates and most of them use python 2. Its your choice to start with python 2 or 3. Let&rsquo;s talk about python in detail in the next post.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[learning python]]></title>
