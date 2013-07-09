@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-09T02:17:44+05:30</updated>
+  <updated>2013-07-09T15:20:58+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[objects in python]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/09/objects-in-python/"/>
+    <updated>2013-07-09T11:37:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/07/09/objects-in-python</id>
+    <content type="html"><![CDATA[<p>Objects are used to access the methods of a class. Take a look at the following code.</p>
+
+<figure class='code'><figcaption><span>objects in python lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>class Students(object):
+</span><span class='line'>  def __init__(self, name, no):
+</span><span class='line'>    self.name = name
+</span><span class='line'>    self.no = no
+</span><span class='line'>
+</span><span class='line'>  def display(self):
+</span><span class='line'>    print 'Student name: %s and no: %d' %(self.name, self.no)
+</span><span class='line'>
+</span><span class='line'>student1 = Students('mike', 15)
+</span><span class='line'>student1.display()</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In this code student1 is the object. <strong>init</strong> is like constructor in c which is used to initialise the data. The name self holds the object itself. In this code &lsquo;self&rsquo; is the object student1. You can create as many objects as you like.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Python]]></title>

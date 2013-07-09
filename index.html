@@ -9,7 +9,17 @@
   <meta name="author" content="DINESH S">
 
   
-  <meta name="description" content="Python is an awesome scripting language. If you start learning python then you can wave goodbye to braces. Python is all about indentation. Python &hellip;">
+  <meta name="description" content="Objects are used to access the methods of a class. Take a look at the following code. objects in python lang: python 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+class &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +88,69 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/07/09/objects-in-python/">Objects in Python</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-09T11:37:00+05:30" pubdate data-updated="true">Jul 9<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/07/09/objects-in-python/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Objects are used to access the methods of a class. Take a look at the following code.</p>
+
+<figure class='code'><figcaption><span>objects in python lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>class Students(object):
+</span><span class='line'>  def __init__(self, name, no):
+</span><span class='line'>    self.name = name
+</span><span class='line'>    self.no = no
+</span><span class='line'>
+</span><span class='line'>  def display(self):
+</span><span class='line'>    print 'Student name: %s and no: %d' %(self.name, self.no)
+</span><span class='line'>
+</span><span class='line'>student1 = Students('mike', 15)
+</span><span class='line'>student1.display()</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In this code student1 is the object. <strong>init</strong> is like constructor in c which is used to initialise the data. The name self holds the object itself. In this code &lsquo;self&rsquo; is the object student1. You can create as many objects as you like.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -255,6 +328,10 @@ Wow getting this post online was really a tough job.</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/09/objects-in-python/">Objects in Python</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/07/05/python/">Python</a>
