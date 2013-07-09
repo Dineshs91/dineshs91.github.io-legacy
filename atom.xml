@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-09T15:39:56+05:30</updated>
+  <updated>2013-07-09T15:42:53+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -30,7 +30,8 @@
 <p>or try code mirror
 <a href="http://codemirror.net/">http://codemirror.net/</a></p>
 
-<p>sculpt is another program that can run in browser. This is an entirely in browser implementation of python.</p>
+<p>skulpt is another program that can run in browser. This is an entirely in browser implementation of python.
+<a href="http://www.skulpt.org/">http://www.skulpt.org/</a></p>
 
 <p>Note: They may not have all the functionalities. Check the documentation for supported features.</p>
 ]]></content>
