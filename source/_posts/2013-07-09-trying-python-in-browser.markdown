@@ -17,6 +17,7 @@ http://www.codeskulptor.org
 or try code mirror
 http://codemirror.net/
 
-sculpt is another program that can run in browser. This is an entirely in browser implementation of python.
+skulpt is another program that can run in browser. This is an entirely in browser implementation of python.
+http://www.skulpt.org/
 
 Note: They may not have all the functionalities. Check the documentation for supported features.
