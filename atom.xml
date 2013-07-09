@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-09T15:20:58+05:30</updated>
+  <updated>2013-07-09T15:39:56+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Trying python in browser]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/09/trying-python-in-browser/"/>
+    <updated>2013-07-09T15:31:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/07/09/trying-python-in-browser</id>
+    <content type="html"><![CDATA[<p>You can use these sites to test your python code.</p>
+
+<p><a href="http://repl.it">http://repl.it</a></p>
+
+<p><img src="http://Dineshs91.github.io/images/repl.png" /></p>
+
+<p><a href="http://www.codeskulptor.org">http://www.codeskulptor.org</a>
+<img src="http://Dineshs91.github.io/images/codeskulptor.png" /></p>
+
+<p>or try code mirror
+<a href="http://codemirror.net/">http://codemirror.net/</a></p>
+
+<p>sculpt is another program that can run in browser. This is an entirely in browser implementation of python.</p>
+
+<p>Note: They may not have all the functionalities. Check the documentation for supported features.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[objects in python]]></title>
