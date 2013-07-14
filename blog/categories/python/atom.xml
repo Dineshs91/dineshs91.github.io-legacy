@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-14T16:28:23+05:30</updated>
+  <updated>2013-07-14T16:35:57+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -14,11 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Inspect a module]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/14/inspect-a-module/"/>
+    <title type="html"><![CDATA[Inspect and timeit module]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/14/inspect-and-timeit-module/"/>
     <updated>2013-07-14T15:45:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/14/inspect-a-module</id>
-    <content type="html"><![CDATA[<p>If you want to have a look at the source of a module, you can do this in the following way.</p>
+    <id>http://Dineshs91.github.io/blog/2013/07/14/inspect-and-timeit-module</id>
+    <content type="html"><![CDATA[<p>If you ever wondered how a certain function is implemented for ex: gcd(), there is just a module for this. If you want to have a look at the source of a module, you can do it in the following way.</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Inspect a module lang: python </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -28,9 +28,10 @@
 </span><span class='line'>from fractions import gcd
 </span><span class='line'>print inspect.getsource(gcd)</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>gcd is used to find the greatest common divisor.</p>
+<p>gcd is used to find the greatest common divisor.
+replace gcd with your own function.</p>
 
-<p>Use the timeit module to view the running time.</p>
+<p>If you want to find the execution time of a function, you can use the timeit module. A simple use of timeit module is shown below.</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Timeit module lang: python <a href="http://docs.python.org/2/library/timeit.html">http://docs.python.org/2/library/timeit.html</a> python docs</span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -61,7 +62,8 @@
 </span><span class='line'><span class="nt">&lt;p&gt;</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>The output is the execution time in seconds</p>
+<p>The output is the execution time in seconds.
+For more on timeit module check the python docs.</p>
 ]]></content>
   </entry>
   

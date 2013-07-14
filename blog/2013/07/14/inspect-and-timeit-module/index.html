@@ -5,15 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Inspect a module - My code … :) :)</title>
+  <title>Inspect and timeit module - My code … :) :)</title>
   <meta name="author" content="DINESH S">
 
   
-  <meta name="description" content="If you want to have a look at the source of a module, you can do this in the following way. Inspect a module lang: python 1
-2
-3
-import inspect
-from &hellip;">
+  <meta name="description" content="If you ever wondered how a certain function is implemented for ex: gcd(), there is just a module for this. If you want to have a look at the source &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +18,7 @@ from &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Dineshs91.github.io/blog/2013/07/14/inspect-a-module">
+  <link rel="canonical" href="http://Dineshs91.github.io/blog/2013/07/14/inspect-and-timeit-module">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="My code … :) :)" type="application/atom+xml">
@@ -85,7 +81,7 @@ from &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Inspect a Module</h1>
+      <h1 class="entry-title">Inspect and Timeit Module</h1>
     
     
       <p class="meta">
@@ -110,7 +106,7 @@ from &hellip;">
   </header>
 
 
-<div class="entry-content"><p>If you want to have a look at the source of a module, you can do this in the following way.</p>
+<div class="entry-content"><p>If you ever wondered how a certain function is implemented for ex: gcd(), there is just a module for this. If you want to have a look at the source of a module, you can do it in the following way.</p>
 
 <figure class='code'><figcaption><span>Inspect a module lang: python </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -121,9 +117,10 @@ from &hellip;">
 </span><span class='line'>print inspect.getsource(gcd)</span></code></pre></td></tr></table></div></figure>
 
 
-<p>gcd is used to find the greatest common divisor.</p>
+<p>gcd is used to find the greatest common divisor.
+replace gcd with your own function.</p>
 
-<p>Use the timeit module to view the running time.</p>
+<p>If you want to find the execution time of a function, you can use the timeit module. A simple use of timeit module is shown below.</p>
 
 <figure class='code'><figcaption><span>Timeit module lang: python</span><a href='http://docs.python.org/2/library/timeit.html'>python docs</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -141,7 +138,8 @@ from &hellip;">
 </span><span class='line'>    print (timeit.timeit("test()", setup="from __main__ import test", number=100))</span></code></pre></td></tr></table></div></figure>
 
 
-<p>The output is the execution time in seconds</p>
+<p>The output is the execution time in seconds.
+For more on timeit module check the python docs.</p>
 </div>
 
 
@@ -178,7 +176,7 @@ from &hellip;">
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://Dineshs91.github.io/blog/2013/07/14/inspect-a-module/" data-via="sdinesh1991" data-counturl="http://Dineshs91.github.io/blog/2013/07/14/inspect-a-module/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://Dineshs91.github.io/blog/2013/07/14/inspect-and-timeit-module/" data-via="sdinesh1991" data-counturl="http://Dineshs91.github.io/blog/2013/07/14/inspect-and-timeit-module/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -213,7 +211,7 @@ from &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/07/14/inspect-a-module/">Inspect a Module</a>
+        <a href="/blog/2013/07/14/inspect-and-timeit-module/">Inspect and Timeit Module</a>
       </li>
     
       <li class="post">
@@ -254,8 +252,8 @@ from &hellip;">
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://Dineshs91.github.io/blog/2013/07/14/inspect-a-module/';
-        var disqus_url = 'http://Dineshs91.github.io/blog/2013/07/14/inspect-a-module/';
+        var disqus_identifier = 'http://Dineshs91.github.io/blog/2013/07/14/inspect-and-timeit-module/';
+        var disqus_url = 'http://Dineshs91.github.io/blog/2013/07/14/inspect-and-timeit-module/';
         var disqus_script = 'embed.js';
       
     (function () {
@@ -295,8 +293,8 @@ from &hellip;">
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://Dineshs91.github.io/blog/2013/07/14/inspect-a-module/';
-        var disqus_url = 'http://Dineshs91.github.io/blog/2013/07/14/inspect-a-module/';
+        var disqus_identifier = 'http://Dineshs91.github.io/blog/2013/07/14/inspect-and-timeit-module/';
+        var disqus_url = 'http://Dineshs91.github.io/blog/2013/07/14/inspect-and-timeit-module/';
         var disqus_script = 'embed.js';
       
     (function () {
