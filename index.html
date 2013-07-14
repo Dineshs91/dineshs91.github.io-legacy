@@ -9,20 +9,11 @@
   <meta name="author" content="DINESH S">
 
   
-  <meta name="description" content="find and replace lang: python 1
+  <meta name="description" content="If you want to have a look at the source of a module, you can do this in the following way. Inspect a module lang: python 1
 2
 3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-def find_replace(string, find, replace): len_find = len(find) len_replace = len(replace &hellip;">
+import inspect
+from &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,6 +82,75 @@ def find_replace(string, find, replace): len_find = len(find) len_replace = len(
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/07/14/inspect-a-module/">Inspect a Module</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-14T15:45:00+05:30" pubdate data-updated="true">Jul 14<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/07/14/inspect-a-module/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you want to have a look at the source of a module, you can do this in the following way.</p>
+
+<figure class='code'><figcaption><span>Inspect a module lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import inspect
+</span><span class='line'>from fractions import gcd
+</span><span class='line'>print inspect.getsource(gcd)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>gcd is used to find the greatest common divisor.</p>
+
+<p>Use the timeit module to view the running time.</p>
+
+<figure class='code'><figcaption><span>Timeit module lang: python</span><a href='http://docs.python.org/2/library/timeit.html'>python docs</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def test():
+</span><span class='line'>    a = 0
+</span><span class='line'>    for i in range(100):
+</span><span class='line'>  a += i
+</span><span class='line'>
+</span><span class='line'>if __name__ == "__main__":
+</span><span class='line'>    print (timeit.timeit("test()", setup="from __main__ import test", number=100))</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The output is the execution time in seconds</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -456,6 +516,10 @@ Wow getting this post online was really a tough job.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/07/14/inspect-a-module/">Inspect a Module</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/07/13/find-and-replace-in-python/">Find and Replace in Python</a>
       </li>
     
@@ -469,10 +533,6 @@ Wow getting this post online was really a tough job.</p>
     
       <li class="post">
         <a href="/blog/2013/07/05/python/">Python</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/05/learning-python/">Learning Python</a>
       </li>
     
   </ul>
