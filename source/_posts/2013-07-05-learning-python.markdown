@@ -12,4 +12,4 @@ The first way is to learn from the python official website 'python.org'. Check t
 
 Next have a look at 'learnpythonthehardway' site. It also provides some good tutorials.
 
-After learning the basics check this site "http://code.activestate.com/recipes/langs/python/". It has great python programs. Learn from others code look what libraries they are using. The best to way learn programming is by looking at others code and learn.
+After learning the basics check this site "http://code.activestate.com/recipes/langs/python/". It has great python programs. Learn from others code, look what libraries they are using. The best way to learn programming is by reading code.
