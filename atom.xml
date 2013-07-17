@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-17T13:08:27+05:30</updated>
+  <updated>2013-07-17T14:03:39+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,123 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Primality testing]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/17/primality-testing/"/>
+    <updated>2013-07-17T13:28:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/07/17/primality-testing</id>
+    <content type="html"><![CDATA[<p>Here we are checking the prime numbers from 1 to 10**5. In both the methods we store the calculated prime numbers in a list and are used for calculating other prime numbers. I have used timeit module to check the execution time. The time is in seconds.</p>
+
+<ol>
+<li>In the first method we use lists which contain the prime numbers that are calculated.
+We divide the number(n) by prime numbers less than half of the number(n/2).</li>
+</ol>
+
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>from timeit import time
+</span><span class='line'>
+</span><span class='line'>primeno = []
+</span><span class='line'>
+</span><span class='line'>def prime(n):
+</span><span class='line'>  for i in xrange(2, n + 1):
+</span><span class='line'>    count = 0
+</span><span class='line'>    for j in primeno:
+</span><span class='line'>      if i % j == 0 and j &lt;= (i/2)+1:
+</span><span class='line'>        count += 1
+</span><span class='line'>        break
+</span><span class='line'>    if count == 0:
+</span><span class='line'>      primeno.append(i)
+</span><span class='line'>
+</span><span class='line'>start_time = time.time()
+</span><span class='line'>prime(10**5)
+</span><span class='line'>end_time = time.time()
+</span><span class='line'>total_time = end_time - start_time # Time in seconds
+</span><span class='line'>#print primeno
+</span><span class='line'>print 'Total time:', total_time</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>In this method also we use lists but we divide the number(n) by the prime numbers which are less than the square root of the number(sqrt(n)).</li>
+</ol>
+
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import math
+</span><span class='line'>from timeit import time
+</span><span class='line'>
+</span><span class='line'>primeno = []
+</span><span class='line'>
+</span><span class='line'>def prime(n):
+</span><span class='line'>    for i in xrange(2, n + 1):
+</span><span class='line'>        sq = math.sqrt(i)
+</span><span class='line'>        count = 0
+</span><span class='line'>        for j in primeno:
+</span><span class='line'>            if j > sq + 1:
+</span><span class='line'>                break
+</span><span class='line'>            if i % j == 0:
+</span><span class='line'>                count += 1
+</span><span class='line'>                break
+</span><span class='line'>        if count == 0:
+</span><span class='line'>            primeno.append(i)
+</span><span class='line'>
+</span><span class='line'>start_time = time.time()
+</span><span class='line'>prime(10**5)
+</span><span class='line'>end_time = time.time()
+</span><span class='line'>total_time = end_time - start_time # Time in seconds
+</span><span class='line'>#print primeno
+</span><span class='line'>print 'Total time:', total_time</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Surely the second program runs faster. Run the program and see for yourself the difference in time between the two.
+If you want the prime numbers just uncomment the line &ldquo;#print primeno&rdquo;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Inspect and timeit module]]></title>

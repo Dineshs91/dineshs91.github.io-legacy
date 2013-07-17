@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-17T13:08:27+05:30</updated>
+  <updated>2013-07-17T14:03:39+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,141 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Primality testing]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/17/primality-testing/"/>
+    <updated>2013-07-17T13:28:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/07/17/primality-testing</id>
+    <content type="html"><![CDATA[<p>Here we are checking the prime numbers from 1 to 10**5. In both the methods we store the calculated prime numbers in a list and are used for calculating other prime numbers. I have used timeit module to check the execution time. The time is in seconds.</p>
+
+<ol>
+<li>In the first method we use lists which contain the prime numbers that are calculated.
+We divide the number(n) by prime numbers less than half of the number(n/2).</li>
+</ol>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>from timeit import time&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>primeno = []&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>def prime(n):
+</span><span class='line'>  for i in xrange(2, n + 1):&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>count = 0
+</span><span class='line'>for j in primeno:
+</span><span class='line'>  if i % j == 0 and j &lt;= (i/2)+1:
+</span><span class='line'>    count += 1
+</span><span class='line'>    break
+</span><span class='line'>if count == 0:
+</span><span class='line'>  primeno.append(i)
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>start_time = time.time()
+</span><span class='line'>prime(10**5)
+</span><span class='line'>end_time = time.time()
+</span><span class='line'>total_time = end_time &ndash; start_time # Time in seconds&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>print primeno&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>print &lsquo;Total time:&rsquo;, total_time</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ol>
+<li>In this method also we use lists but we divide the number(n) by the prime numbers which are less than the square root of the number(sqrt(n)).</li>
+</ol>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import math
+</span><span class='line'>from timeit import time&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>primeno = []&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>def prime(n):&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>for i in xrange(2, n + 1):
+</span><span class='line'>    sq = math.sqrt(i)
+</span><span class='line'>    count = 0
+</span><span class='line'>    for j in primeno:
+</span><span class='line'>        if j &gt; sq + 1:
+</span><span class='line'>            break
+</span><span class='line'>        if i % j == 0:
+</span><span class='line'>            count += 1
+</span><span class='line'>            break
+</span><span class='line'>    if count == 0:
+</span><span class='line'>        primeno.append(i)
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>start_time = time.time()
+</span><span class='line'>prime(10**5)
+</span><span class='line'>end_time = time.time()
+</span><span class='line'>total_time = end_time &ndash; start_time # Time in seconds&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>print primeno&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>print &lsquo;Total time:&rsquo;, total_time&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Surely the second program runs faster. Run the program and see for yourself the difference in time between the two.
+If you want the prime numbers just uncomment the line &ldquo;#print primeno&rdquo;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Inspect and timeit module]]></title>
@@ -179,15 +314,6 @@ Change the value of string if you want any custom string, similarly change the f
 </span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>In this code student1 is the object. <strong>init</strong> is like constructor in c which is used to initialise the data. The name self holds the object itself. In this code &lsquo;self&rsquo; is the object student1. You can create as many objects as you like.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Python]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/05/python/"/>
-    <updated>2013-07-05T23:59:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/05/python</id>
-    <content type="html"><![CDATA[<p>Python is an awesome scripting language. If you start learning python then you can wave goodbye to braces. Python is all about indentation. Python code is very clear and easy to understand. There are two versions of python you can choose from python 2 and python 3. Python 3 is the latest one but python 2 is also receiving updates and most of them use python 2. Its your choice to start with python 2 or 3. Let&rsquo;s talk about python in detail in the next post.</p>
 ]]></content>
   </entry>
   
