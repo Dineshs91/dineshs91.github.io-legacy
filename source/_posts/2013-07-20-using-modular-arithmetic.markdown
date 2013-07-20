@@ -10,13 +10,16 @@ Using modular arithmetic for various purposes.(In python)
 
 1. If you want the decimal part of a number use mod operator.
 
+{% codeblock lang: python %}
 >>> pi = 3.14159
 
 >>> pi % 1
     .14159
+{% endcodeblock %}
 
 2. If you want the digit in one's place and the most significant digit.
 
+{% codeblock lang:python %}
 >>> a = 12
 
 >>> a % 10
@@ -24,5 +27,5 @@ Using modular arithmetic for various purposes.(In python)
 
 >>> a / 10
     1
-
+{% endcodeblock %}
 
