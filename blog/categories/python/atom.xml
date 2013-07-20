@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-17T20:08:44+05:30</updated>
+  <updated>2013-07-20T11:27:45+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[using modular arithmetic]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/20/using-modular-arithmetic/"/>
+    <updated>2013-07-20T11:13:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/07/20/using-modular-arithmetic</id>
+    <content type="html"><![CDATA[<p>Using modular arithmetic for various purposes.(In python)</p>
+
+<ol>
+<li>If you want the decimal part of a number use mod operator.</li>
+</ol>
+
+
+<blockquote><blockquote><blockquote><p>pi = 3.14159</p>
+
+<p>pi % 1</p>
+
+<pre><code>.14159
+</code></pre></blockquote></blockquote></blockquote>
+
+<ol>
+<li>If you want the digit in one&rsquo;s place and the most significant digit.</li>
+</ol>
+
+
+<blockquote><blockquote><blockquote><p>a = 12</p>
+
+<p>a % 10</p>
+
+<pre><code>2
+</code></pre>
+
+<p>a / 10</p>
+
+<pre><code>1
+</code></pre></blockquote></blockquote></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Primality testing]]></title>
@@ -265,55 +303,6 @@ Change the value of string if you want any custom string, similarly change the f
 <a href="http://www.skulpt.org/">http://www.skulpt.org/</a></p>
 
 <p>Note: They may not have all the functionalities. Check the documentation for supported features.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[objects in python]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/09/objects-in-python/"/>
-    <updated>2013-07-09T11:37:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/09/objects-in-python</id>
-    <content type="html"><![CDATA[<p>Objects are used to access the methods of a class. Take a look at the following code.</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>objects in python lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;p>class Students(object):
-</span><span class='line'>  def &lt;strong>init&lt;/strong>(self, name, no):&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>self.name = name
-</span><span class='line'>self.no = no
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p>  def display(self):&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>print 'Student name: %s and no: %d' %(self.name, self.no)
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p>student1 = Students(&lsquo;mike&rsquo;, 15)
-</span><span class='line'>student1.display()&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>In this code student1 is the object. <strong>init</strong> is like constructor in c which is used to initialise the data. The name self holds the object itself. In this code &lsquo;self&rsquo; is the object student1. You can create as many objects as you like.</p>
 ]]></content>
   </entry>
   
