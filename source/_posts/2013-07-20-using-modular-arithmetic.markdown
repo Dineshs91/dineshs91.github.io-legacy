@@ -19,7 +19,7 @@ Using modular arithmetic for various purposes.(In python)
 
 2. If you want the digit in one's place and the most significant digit.
 
-{% codeblock lang:python %}
+{% codeblock lang: python %}
 >>> a = 12
 
 >>> a % 10
