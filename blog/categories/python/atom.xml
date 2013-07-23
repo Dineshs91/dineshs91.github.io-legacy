@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-23T11:29:50+05:30</updated>
+  <updated>2013-07-23T11:34:39+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -20,53 +20,63 @@
     <id>http://Dineshs91.github.io/blog/2013/07/23/list-comprehension</id>
     <content type="html"><![CDATA[<p>List comprehensions are very useful. Here are some examples</p>
 
-<ol>
-<li>Get input and store it in a list
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [raw_input() for _ in range(n)]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote></li>
-</ol>
+<p>1.) Get input and store it in a list</p>
 
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [raw_input() for _ in range(n)]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
 
 <p>Here &lsquo;n&rsquo; is the number of elements. For example if you want to store 5 names then &lsquo;n&rsquo; is 5.</p>
 
-<ol>
-<li>Convert numbers from a list which are stored in string to int
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [int(i) for i in l]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote></li>
-</ol>
+<p>2.) Convert numbers from a list which are stored in string to int</p>
 
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [int(i) for i in l]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
 
 <p>Here l is the list which contains the numbers.</p>
 
-<ol>
-<li>If we want a multidimensional list
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [ [0 for col in range(5)] for row in range(10)]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote></li>
-</ol>
+<p>3.) If we want a multidimensional list</p>
 
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [ [0 for col in range(5)] for row in range(10)]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
 
 <p>This creates a multidimensional list containing 10 rows and 5 columns.</p>
 
-<ol>
-<li>Get the numbers greater than 100 from another list
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i for i in l if i > 100]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote></li>
-</ol>
+<p>4.) Get the numbers greater than 100 from another list</p>
 
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i for i in l if i > 100]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
 
 <p>&lsquo;l&rsquo; is the list which contains the numbers. The numbers in &lsquo;l&rsquo; which are greater than 100 are added to list &lsquo;a&rsquo;</p>
 
-<ol>
-<li>If you want to add a number to all the numbers in a list
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i+3 for i in l]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote></li>
-</ol>
+<p>5.) If you want to add a number to all the numbers in a list</p>
 
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i+3 for i in l]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
 
 <p>We are adding 3 to all the numbers in &lsquo;l&rsquo; and storing in &lsquo;a&rsquo;. If you want to store it in &lsquo;l&rsquo; itself replace a with l.</p>
 ]]></content>
