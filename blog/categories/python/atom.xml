@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-23T11:34:39+05:30</updated>
+  <updated>2013-07-23T14:16:06+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -40,9 +40,9 @@
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
 </span><span class='line'>
-</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [int(i) for i in l]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
+</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [int(i) for i in lis]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
 
-<p>Here l is the list which contains the numbers.</p>
+<p>Here &lsquo;lis&rsquo; is the list which contains the numbers.</p>
 
 <p>3.) If we want a multidimensional list</p>
 
@@ -64,9 +64,9 @@
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
 </span><span class='line'>
-</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i for i in l if i > 100]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
+</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i for i in lis if i > 100]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
 
-<p>&lsquo;l&rsquo; is the list which contains the numbers. The numbers in &lsquo;l&rsquo; which are greater than 100 are added to list &lsquo;a&rsquo;</p>
+<p>&lsquo;lis&rsquo; is the list which contains the numbers. The numbers in list &lsquo;lis&rsquo; which are greater than 100 are added to list &lsquo;a&rsquo;</p>
 
 <p>5.) If you want to add a number to all the numbers in a list</p>
 
@@ -76,9 +76,9 @@
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
 </span><span class='line'>
-</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i+3 for i in l]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
+</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i+3 for i in lis]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
 
-<p>We are adding 3 to all the numbers in &lsquo;l&rsquo; and storing in &lsquo;a&rsquo;. If you want to store it in &lsquo;l&rsquo; itself replace a with l.</p>
+<p>We are adding 3 to all the numbers in &lsquo;lis&rsquo; and storing in &lsquo;a&rsquo;. If you want to store it in &lsquo;lis&rsquo; itself replace a with lis.</p>
 ]]></content>
   </entry>
   
