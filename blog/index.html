@@ -9,8 +9,10 @@
 
 <meta name="author" content="DINESH S"> 
 
-<meta name="description" content="List comprehensions are very useful. Here are some examples 1.) Get input and store it in a list lang: python 1
->>> a = [raw_input() for _ in range( &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="Merge sort is a sorting method which uses divide and conquer algorithm. It has a running time of big oh O(N log N). Merge sort lang: python 1
+2
+3
+4 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -96,6 +98,131 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/07/23/merge-sort/">
+		
+			Merge Sort</a>
+	</h2>
+	<div class="entry-content">
+		<p>Merge sort is a sorting method which uses divide and conquer algorithm. It has a running time of big oh O(N log N).</p>
+
+<figure class='code'><figcaption><span>Merge sort lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#! /usr/bin/env python
+</span><span class='line'>
+</span><span class='line'>## Program for merge sort
+</span><span class='line'>
+</span><span class='line'>def divide(array):
+</span><span class='line'>    if len(array) &lt; 2:
+</span><span class='line'>        return array
+</span><span class='line'>    length = len(array)
+</span><span class='line'>    left = array[:length/2]
+</span><span class='line'>    right = array[length/2:]
+</span><span class='line'>    left = divide(left)
+</span><span class='line'>    right = divide(right)
+</span><span class='line'>    #print left, right
+</span><span class='line'>    sort_array = []
+</span><span class='line'>    i = 0
+</span><span class='line'>    j = 0
+</span><span class='line'>    while i &lt; len(left) and j &lt; len(right):
+</span><span class='line'>        if left[i] &lt;= right[j]:
+</span><span class='line'>            sort_array.append(left[i])
+</span><span class='line'>            i += 1
+</span><span class='line'>        else:
+</span><span class='line'>            sort_array.append(right[j])
+</span><span class='line'>            j += 1
+</span><span class='line'>    while i &lt; len(left):
+</span><span class='line'>        sort_array.append(left[i])
+</span><span class='line'>        i += 1
+</span><span class='line'>    while j &lt; len(right):
+</span><span class='line'>        sort_array.append(right[j])
+</span><span class='line'>        j += 1
+</span><span class='line'>    return sort_array
+</span><span class='line'>            
+</span><span class='line'>def main():
+</span><span class='line'>    array = raw_input("Enter the numbers to be sorted:")
+</span><span class='line'>    array = [int(i) for i in array.split()]
+</span><span class='line'>    sort_array = divide(array)
+</span><span class='line'>    print sort_array
+</span><span class='line'>
+</span><span class='line'>if __name__ == "__main__":
+</span><span class='line'>    main()</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you want to use sorting in your program always use the builtin function &lsquo;sort&rsquo;. It is always efficient than what we can write.</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-23T14:38:00+05:30" pubdate data-updated="true">Jul 23<span>rd</span>, 2013</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/python/'>python</a>
+
+
+</div>
+	
+		<span class="comments"><a href="/blog/2013/07/23/merge-sort//blog/index.html#disqus_thread">Comments</a></span>
+	
+</div></article>
 
 
     <article class="post">
@@ -776,50 +903,6 @@ Change the value of string if you want any custom string, similarly change the f
 </div>
 	
 		<span class="comments"><a href="/blog/2013/07/05/learning-python//blog/index.html#disqus_thread">Comments</a></span>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/06/30/mooc/">
-		
-			MOOC</a>
-	</h2>
-	<div class="entry-content">
-		<p>MOOC (Massive Open Online Courses) are becoming quite popular these days due to its free and worldwide availability. Some of them are Coursera and edx. Among these coursera has a lot of courses from various universities. You can take any course and obtain a statement of accomplishment. During the course you are to attend quizzes and do projects every week which account for the total credit you obtain for the course. Courses in coursera are very useful and most of them are self contained meaning they don&rsquo;t have any prerequisites and no study material is required. You could either view the videos on the site or you can download them to the local system and watch later.</p>
-
-<p>MOOC&rsquo;s are the future. Because everyone has the opportunity to quality education and that too free. The only requirement is a system with internet connectivity.</p>
-
-<p>Students all over the world are using these websites. So the discussion forums are very active. Some courses have peer assessment which is great way to learn.</p>
-
-<p>Note: MOOC are nowhere near to the courses offered in those universities and the certificates are just a statement of accomplishment. Coursera is trying to get accredition for some of its courses.</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-30T19:25:00+05:30" pubdate data-updated="true">Jun 30<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-</div>
-	
-		<span class="comments"><a href="/blog/2013/06/30/mooc//blog/index.html#disqus_thread">Comments</a></span>
 	
 </div></article>
 

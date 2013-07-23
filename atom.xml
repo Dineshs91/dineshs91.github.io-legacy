@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-23T14:16:06+05:30</updated>
+  <updated>2013-07-23T14:43:20+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,98 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[merge sort]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/23/merge-sort/"/>
+    <updated>2013-07-23T14:38:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/07/23/merge-sort</id>
+    <content type="html"><![CDATA[<p>Merge sort is a sorting method which uses divide and conquer algorithm. It has a running time of big oh O(N log N).</p>
+
+<figure class='code'><figcaption><span>Merge sort lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#! /usr/bin/env python
+</span><span class='line'>
+</span><span class='line'>## Program for merge sort
+</span><span class='line'>
+</span><span class='line'>def divide(array):
+</span><span class='line'>    if len(array) &lt; 2:
+</span><span class='line'>        return array
+</span><span class='line'>    length = len(array)
+</span><span class='line'>    left = array[:length/2]
+</span><span class='line'>    right = array[length/2:]
+</span><span class='line'>    left = divide(left)
+</span><span class='line'>    right = divide(right)
+</span><span class='line'>    #print left, right
+</span><span class='line'>    sort_array = []
+</span><span class='line'>    i = 0
+</span><span class='line'>    j = 0
+</span><span class='line'>    while i &lt; len(left) and j &lt; len(right):
+</span><span class='line'>        if left[i] &lt;= right[j]:
+</span><span class='line'>            sort_array.append(left[i])
+</span><span class='line'>            i += 1
+</span><span class='line'>        else:
+</span><span class='line'>            sort_array.append(right[j])
+</span><span class='line'>            j += 1
+</span><span class='line'>    while i &lt; len(left):
+</span><span class='line'>        sort_array.append(left[i])
+</span><span class='line'>        i += 1
+</span><span class='line'>    while j &lt; len(right):
+</span><span class='line'>        sort_array.append(right[j])
+</span><span class='line'>        j += 1
+</span><span class='line'>    return sort_array
+</span><span class='line'>            
+</span><span class='line'>def main():
+</span><span class='line'>    array = raw_input("Enter the numbers to be sorted:")
+</span><span class='line'>    array = [int(i) for i in array.split()]
+</span><span class='line'>    sort_array = divide(array)
+</span><span class='line'>    print sort_array
+</span><span class='line'>
+</span><span class='line'>if __name__ == "__main__":
+</span><span class='line'>    main()</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you want to use sorting in your program always use the builtin function &lsquo;sort&rsquo;. It is always efficient than what we can write.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[List comprehension]]></title>

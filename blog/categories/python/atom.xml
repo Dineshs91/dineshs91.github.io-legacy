@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-23T14:16:06+05:30</updated>
+  <updated>2013-07-23T14:43:20+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,117 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[merge sort]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/23/merge-sort/"/>
+    <updated>2013-07-23T14:38:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/07/23/merge-sort</id>
+    <content type="html"><![CDATA[<p>Merge sort is a sorting method which uses divide and conquer algorithm. It has a running time of big oh O(N log N).</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Merge sort lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>! /usr/bin/env python&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h2>Program for merge sort&lt;/h2>
+</span><span class='line'>
+</span><span class='line'>&lt;p>def divide(array):&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>if len(array) &lt; 2:
+</span><span class='line'>    return array
+</span><span class='line'>length = len(array)
+</span><span class='line'>left = array[:length/2]
+</span><span class='line'>right = array[length/2:]
+</span><span class='line'>left = divide(left)
+</span><span class='line'>right = divide(right)
+</span><span class='line'>#print left, right
+</span><span class='line'>sort_array = []
+</span><span class='line'>i = 0
+</span><span class='line'>j = 0
+</span><span class='line'>while i &lt; len(left) and j &lt; len(right):
+</span><span class='line'>    if left[i] &lt;= right[j]:
+</span><span class='line'>        sort_array.append(left[i])
+</span><span class='line'>        i += 1
+</span><span class='line'>    else:
+</span><span class='line'>        sort_array.append(right[j])
+</span><span class='line'>        j += 1
+</span><span class='line'>while i &lt; len(left):
+</span><span class='line'>    sort_array.append(left[i])
+</span><span class='line'>    i += 1
+</span><span class='line'>while j &lt; len(right):
+</span><span class='line'>    sort_array.append(right[j])
+</span><span class='line'>    j += 1
+</span><span class='line'>return sort_array
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>def main():&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>array = raw_input("Enter the numbers to be sorted:")
+</span><span class='line'>array = [int(i) for i in array.split()]
+</span><span class='line'>sort_array = divide(array)
+</span><span class='line'>print sort_array
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>if &lt;strong>name&lt;/strong> == &ldquo;&lt;strong>main&lt;/strong>&rdquo;:&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>main()
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>If you want to use sorting in your program always use the builtin function &lsquo;sort&rsquo;. It is always efficient than what we can write.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[List comprehension]]></title>
@@ -341,48 +452,6 @@ replace gcd with your own function.</p>
 
 <p>The output is the execution time in seconds.
 For more on timeit module check the python docs.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[find and replace in python]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/13/find-and-replace-in-python/"/>
-    <updated>2013-07-13T22:51:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/13/find-and-replace-in-python</id>
-    <content type="html"><![CDATA[<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>find and replace lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>def find_replace(string, find, replace):&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>len_find = len(find)
-</span><span class='line'>len_replace = len(replace)
-</span><span class='line'>st = string
-</span><span class='line'>for i in range(len(string) - len(find) + 1):
-</span><span class='line'>    if string[i:i+len_find] == find:
-</span><span class='line'>        st = st[:i] + replace + st[i+len_find:]
-</span><span class='line'>return st    
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p>string = &lsquo;john&rsquo;
-</span><span class='line'>find = &lsquo;n&rsquo;
-</span><span class='line'>replace = &lsquo;nn&rsquo;
-</span><span class='line'>print find_replace(string, find, replace)</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>This program can find string of any length and replace it with any string. If you have any better program please put it in the comments.
-Change the value of string if you want any custom string, similarly change the find and replace variables.</p>
 ]]></content>
   </entry>
   
