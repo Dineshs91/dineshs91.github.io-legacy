@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-20T12:35:10+05:30</updated>
+  <updated>2013-07-23T11:29:50+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[List comprehension]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/23/list-comprehension/"/>
+    <updated>2013-07-23T11:12:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/07/23/list-comprehension</id>
+    <content type="html"><![CDATA[<p>List comprehensions are very useful. Here are some examples</p>
+
+<ol>
+<li>Get input and store it in a list
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [raw_input() for _ in range(n)]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote></li>
+</ol>
+
+
+<p>Here &lsquo;n&rsquo; is the number of elements. For example if you want to store 5 names then &lsquo;n&rsquo; is 5.</p>
+
+<ol>
+<li>Convert numbers from a list which are stored in string to int
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [int(i) for i in l]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote></li>
+</ol>
+
+
+<p>Here l is the list which contains the numbers.</p>
+
+<ol>
+<li>If we want a multidimensional list
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [ [0 for col in range(5)] for row in range(10)]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote></li>
+</ol>
+
+
+<p>This creates a multidimensional list containing 10 rows and 5 columns.</p>
+
+<ol>
+<li>Get the numbers greater than 100 from another list
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i for i in l if i > 100]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote></li>
+</ol>
+
+
+<p>&lsquo;l&rsquo; is the list which contains the numbers. The numbers in &lsquo;l&rsquo; which are greater than 100 are added to list &lsquo;a&rsquo;</p>
+
+<ol>
+<li>If you want to add a number to all the numbers in a list
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i+3 for i in l]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote></li>
+</ol>
+
+
+<p>We are adding 3 to all the numbers in &lsquo;l&rsquo; and storing in &lsquo;a&rsquo;. If you want to store it in &lsquo;l&rsquo; itself replace a with l.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[using modular arithmetic]]></title>
@@ -314,30 +373,6 @@ For more on timeit module check the python docs.</p>
 
 <p>This program can find string of any length and replace it with any string. If you have any better program please put it in the comments.
 Change the value of string if you want any custom string, similarly change the find and replace variables.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Trying python in browser]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/09/trying-python-in-browser/"/>
-    <updated>2013-07-09T15:31:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/09/trying-python-in-browser</id>
-    <content type="html"><![CDATA[<p>You can use these sites to test your python code.</p>
-
-<p><a href="http://repl.it">http://repl.it</a></p>
-
-<p><img src="/images/repl.png" /></p>
-
-<p><a href="http://www.codeskulptor.org">http://www.codeskulptor.org</a>
-<img src="/images/codeskulptor.png" /></p>
-
-<p>or try code mirror
-<a href="http://codemirror.net/">http://codemirror.net/</a></p>
-
-<p>skulpt is another program that can run in browser. This is an entirely in browser implementation of python.
-<a href="http://www.skulpt.org/">http://www.skulpt.org/</a></p>
-
-<p>Note: They may not have all the functionalities. Check the documentation for supported features.</p>
 ]]></content>
   </entry>
   
