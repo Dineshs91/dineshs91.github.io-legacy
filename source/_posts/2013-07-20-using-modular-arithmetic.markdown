@@ -8,7 +8,7 @@ categories: python
 
 Using modular arithmetic for various purposes.(In python)
 
-1. If you want the decimal part of a number use mod operator.
+1.) If you want the decimal part of a number use mod operator.
 
 {% codeblock lang: python %}
 >>> pi = 3.14159
@@ -17,7 +17,7 @@ Using modular arithmetic for various purposes.(In python)
     .14159
 {% endcodeblock %}
 
-2. If you want the digit in one's place and the most significant digit.
+2.) If you want the digit in one's place and the most significant digit.
 
 {% codeblock lang: python %}
 >>> a = 12
