@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-07-26T13:46:03+05:30</updated>
+  <updated>2013-07-26T13:48:27+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -166,10 +166,7 @@
     <id>http://Dineshs91.github.io/blog/2013/07/20/using-modular-arithmetic</id>
     <content type="html"><![CDATA[<p>Using modular arithmetic for various purposes.(In python)</p>
 
-<ol>
-<li>If you want the decimal part of a number use mod operator.</li>
-</ol>
-
+<p>1.) If you want the decimal part of a number use mod operator.</p>
 
 <figure class='code'><figcaption><span>lang: python </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -182,10 +179,7 @@
 </span><span class='line'>    .14159</span></code></pre></td></tr></table></div></figure>
 
 
-<ol>
-<li>If you want the digit in one&rsquo;s place and the most significant digit.</li>
-</ol>
-
+<p>2.) If you want the digit in one&rsquo;s place and the most significant digit.</p>
 
 <figure class='code'><figcaption><span>lang: python </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
