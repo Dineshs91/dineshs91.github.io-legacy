@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-08-07T15:25:55+05:30</updated>
+  <updated>2013-08-07T15:44:40+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[alphabet-frequency]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/08/07/alphabet-frequency/"/>
+    <updated>2013-08-07T15:28:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/08/07/alphabet-frequency</id>
+    <content type="html"><![CDATA[<p>Alphabet-frequency is a program i have written using python2.7 which graphically displays the frequency of letters in a specified file.
+You can have a look at <a href="https://github.com/Dineshs/alphabet-frequency">https://github.com/Dineshs/alphabet-frequency</a> .</p>
+
+<p>You require matplotlib and numpy modules to run this program.</p>
+
+<p>In the first few lines i have imported the necessary modules. Matplotlib module is used for plotting data. arparse module is used for command line argument parsing.</p>
+
+<p>There are a lot of options which you can provide. The default option is alphabets(lower and upper case). This is a very simple program. You can understand it by looking at the code itself. Output is a graph which shows how frequently a character appears in a file.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[trying google app engine]]></title>
@@ -268,135 +284,6 @@
 </span><span class='line'>&lt;/code>&lt;/pre>
 </span><span class='line'>
 </span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Primality testing]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/17/primality-testing/"/>
-    <updated>2013-07-17T13:28:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/17/primality-testing</id>
-    <content type="html"><![CDATA[<p>Here we are checking the prime numbers from 1 to 10**5. In both the methods we store the calculated prime numbers in a list and are used for calculating other prime numbers. I have used timeit module to check the execution time. The time is in seconds.</p>
-
-<p>1.) In the first method we use lists which contain the prime numbers that are calculated.
-We divide the number(n) by prime numbers less than half of the number(n/2).</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>from timeit import time&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;p>primeno = []&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;p>def prime(n):
-</span><span class='line'>  for i in xrange(2, n + 1):&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>count = 0
-</span><span class='line'>for j in primeno:
-</span><span class='line'>  if i % j == 0 and j &lt;= (i/2)+1:
-</span><span class='line'>    count += 1
-</span><span class='line'>    break
-</span><span class='line'>if count == 0:
-</span><span class='line'>  primeno.append(i)
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p>start_time = time.time()
-</span><span class='line'>prime(10**5)
-</span><span class='line'>end_time = time.time()
-</span><span class='line'>total_time = end_time &ndash; start_time # Time in seconds&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;h1>print primeno&lt;/h1>
-</span><span class='line'>
-</span><span class='line'>&lt;p>print &lsquo;Total time:&rsquo;, total_time</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>2.) In this method also we use lists but we divide the number(n) by the prime numbers which are less than the square root of the number(sqrt(n)).</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>import math
-</span><span class='line'>from timeit import time&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;p>primeno = []&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;p>def prime(n):&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>for i in xrange(2, n + 1):
-</span><span class='line'>    sq = math.sqrt(i)
-</span><span class='line'>    count = 0
-</span><span class='line'>    for j in primeno:
-</span><span class='line'>        if j &gt; sq + 1:
-</span><span class='line'>            break
-</span><span class='line'>        if i % j == 0:
-</span><span class='line'>            count += 1
-</span><span class='line'>            break
-</span><span class='line'>    if count == 0:
-</span><span class='line'>        primeno.append(i)
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p>start_time = time.time()
-</span><span class='line'>prime(10**5)
-</span><span class='line'>end_time = time.time()
-</span><span class='line'>total_time = end_time &ndash; start_time # Time in seconds&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;h1>print primeno&lt;/h1>
-</span><span class='line'>
-</span><span class='line'>&lt;p>print &lsquo;Total time:&rsquo;, total_time&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>Surely the second program runs faster. Run the program and see for yourself the difference in time between the two.
-If you want the prime numbers just uncomment the line &ldquo;#print primeno&rdquo;</p>
 ]]></content>
   </entry>
   

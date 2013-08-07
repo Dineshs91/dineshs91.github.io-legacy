@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2013-08-07T15:25:55+05:30</updated>
+  <updated>2013-08-07T15:44:40+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[alphabet-frequency]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/08/07/alphabet-frequency/"/>
+    <updated>2013-08-07T15:28:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/08/07/alphabet-frequency</id>
+    <content type="html"><![CDATA[<p>Alphabet-frequency is a program i have written using python2.7 which graphically displays the frequency of letters in a specified file.
+You can have a look at <a href="https://github.com/Dineshs/alphabet-frequency">https://github.com/Dineshs/alphabet-frequency</a> .</p>
+
+<p>You require matplotlib and numpy modules to run this program.</p>
+
+<p>In the first few lines i have imported the necessary modules. Matplotlib module is used for plotting data. arparse module is used for command line argument parsing.</p>
+
+<p>There are a lot of options which you can provide. The default option is alphabets(lower and upper case). This is a very simple program. You can understand it by looking at the code itself. Output is a graph which shows how frequently a character appears in a file.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[trying google app engine]]></title>
