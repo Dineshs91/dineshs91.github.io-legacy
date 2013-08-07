@@ -7,7 +7,7 @@ categories: python
 ---
 
 Alphabet-frequency is a program i have written using python2.7 which graphically displays the frequency of letters in a specified file. 
-You can have a look at https://github.com/Dineshs/alphabet-frequency .
+You can have a look at https://github.com/Dineshs91/alphabet-frequency .
 
 You require matplotlib and numpy modules to run this program.
 
