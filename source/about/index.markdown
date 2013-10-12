@@ -7,6 +7,6 @@ sharing: true
 footer: true
 ---
 
-I am 'Dinesh S' a computer geek. Love to solve interesting challenges. I program in python and c++. 
+I am 'Dinesh S' a computer geek. Love to solve interesting challenges. I program in Java, Python and C++. 
 
 My hobbies include playing football, listening to music, blogging..
