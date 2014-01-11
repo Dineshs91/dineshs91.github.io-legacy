@@ -7,3 +7,5 @@ categories:
 ---
 
 Depth First Search (DFS).
+
+This is a searching technique.
