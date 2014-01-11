@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: algorithms | My code … :) :)]]></title>
+  <link href="http://Dineshs91.github.io/blog/categories/algorithms/atom.xml" rel="self"/>
+  <link href="http://Dineshs91.github.io/"/>
+  <updated>2014-01-11T19:54:02+05:30</updated>
+  <id>http://Dineshs91.github.io/</id>
+  <author>
+    <name><![CDATA[DINESH S]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[DFS Demystified]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/01/11/dfs-demystified/"/>
+    <updated>2014-01-11T19:29:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/01/11/dfs-demystified</id>
+    <content type="html"><![CDATA[<p>Depth First Search (DFS).</p>
+
+<p>This is a searching technique.</p>
+]]></content>
+  </entry>
+  
+</feed>
