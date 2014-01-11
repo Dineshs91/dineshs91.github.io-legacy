@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-01-11T19:38:57+05:30</updated>
+  <updated>2014-01-11T19:49:09+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -19,6 +19,8 @@
     <updated>2014-01-11T19:29:00+05:30</updated>
     <id>http://Dineshs91.github.io/blog/2014/01/11/dfs-demystified</id>
     <content type="html"><![CDATA[<p>Depth First Search (DFS).</p>
+
+<p>This is a searching technique.</p>
 ]]></content>
   </entry>
   
