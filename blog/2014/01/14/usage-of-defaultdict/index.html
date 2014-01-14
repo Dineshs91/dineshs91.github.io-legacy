@@ -5,15 +5,11 @@
 	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
 	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8">
-	<title>using modular arithmetic  | My code … :) :)</title>
+	<title>Usage of defaultdict  | My code … :) :)</title>
 
 <meta name="author" content="DINESH S"> 
 
-<meta name="description" content="Using modular arithmetic for various purposes.(In python) 1.) If you want the decimal part of a number use mod operator. lang: python 1
-2
-3
-4
->>> pi &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="defaultdict is a built in function in python. It is available in collections package. 1.) 1st usage. If you want to know the frequency of characters &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -103,23 +99,10 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner"><article class="post">
-	<h2 class="title">Using Modular Arithmetic</h2>
-	<div class="entry-content"><p>Using modular arithmetic for various purposes.(In python)</p>
+	<h2 class="title">Usage of Defaultdict</h2>
+	<div class="entry-content"><p>defaultdict is a built in function in python. It is available in collections package.</p>
 
-<p>1.) If you want the decimal part of a number use mod operator.</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>>>> pi = 3.14159
-</span><span class='line'>
-</span><span class='line'>>>> pi % 1
-</span><span class='line'>    .14159</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2.) If you want the digit in one&rsquo;s place and the most significant digit.</p>
+<p>1.) 1st usage. If you want to know the frequency of characters in a word,</p>
 
 <figure class='code'><figcaption><span>lang: python </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -129,16 +112,51 @@ $(document).ready(
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = 12
+</pre></td><td class='code'><pre><code class=''><span class='line'>from collections import defaultdict
 </span><span class='line'>
-</span><span class='line'>>>> a % 10
-</span><span class='line'>    2
+</span><span class='line'>a = “Amazon”
+</span><span class='line'>res = defaultdict(int)
+</span><span class='line'>for k in a:
+</span><span class='line'>    res[k] += 1
+</span><span class='line'>print res</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The result is {&lsquo;A&rsquo;: 1, &rsquo;m&#8217;: 1, &lsquo;a&rsquo;: 1, &lsquo;z&rsquo;: 1, &lsquo;o&rsquo;: 1, &lsquo;n&rsquo;: 1}
+This program is case sensitive so it counts ‘A’ and ‘a’ seperately. If you want the program to be case insensitive just change to a.lower() in for loop.</p>
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>from collections import defaultdict
 </span><span class='line'>
-</span><span class='line'>>>> a / 10
-</span><span class='line'>    1</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>a = “Amazon”
+</span><span class='line'>res = defaultdict(int)
+</span><span class='line'>for k in a.lower():
+</span><span class='line'>    res[k] += 1
+</span><span class='line'>print res</span></code></pre></td></tr></table></div></figure>
 
 
+<p>The result is {&lsquo;a&rsquo;: 2, &rsquo;m&#8217;: 1, &lsquo;z&rsquo;: 1, &lsquo;o&rsquo;: 1, &lsquo;n&rsquo;: 1}</p>
 
+<p>2.) Using a list in defaultdict.</p>
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>s = [(‘yellow’, 1), (‘blue’, 2), (‘yellow’, 3), (‘blue’, 4)]
+</span><span class='line'>d = defaultdict(list)
+</span><span class='line'>for k, v in s:
+</span><span class='line'>    d[k].append(v)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The result is [(&lsquo;blue&rsquo;, [2, 4]), (&lsquo;yellow&rsquo;, [1, 3])]</p>
 </div>
 
 
@@ -155,7 +173,7 @@ $(document).ready(
   
 
 
-<time datetime="2013-07-20T11:13:00+05:30" pubdate data-updated="true">Jul 20<span>th</span>, 2013</time></div>
+<time datetime="2014-01-14T08:55:00+05:30" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time></div>
 	<div class="tags">
 
 
@@ -164,7 +182,7 @@ $(document).ready(
 
 </div>
 	
-		<span class="comments"><a href="/blog/2013/07/20/using-modular-arithmetic/#disqus_thread">Comments</a></span>
+		<span class="comments"><a href="/blog/2014/01/14/usage-of-defaultdict/#disqus_thread">Comments</a></span>
 	
 </div></article>
 
@@ -213,8 +231,8 @@ Powered by Octopress. Theme CleanPress
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://Dineshs91.github.io/blog/2013/07/20/using-modular-arithmetic/';
-        var disqus_url = 'http://Dineshs91.github.io/blog/2013/07/20/using-modular-arithmetic/';
+        var disqus_identifier = 'http://Dineshs91.github.io/blog/2014/01/14/usage-of-defaultdict/';
+        var disqus_url = 'http://Dineshs91.github.io/blog/2014/01/14/usage-of-defaultdict/';
         var disqus_script = 'embed.js';
       
     (function () {
