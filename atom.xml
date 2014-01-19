@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-01-14T09:21:31+05:30</updated>
+  <updated>2014-01-19T13:17:49+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -85,7 +85,40 @@ This program is case sensitive so it counts ‘A’ and ‘a’ seperately. If y
     <id>http://Dineshs91.github.io/blog/2014/01/11/dfs-demystified</id>
     <content type="html"><![CDATA[<p>Depth First Search (DFS).</p>
 
-<p>This is a searching technique.</p>
+<p>A DFS explores a path all the way to a leaf before backtracking and exploring another path.</p>
+
+<p>DFS always expands one of the nodes at the deepest level of the tree.
+The search goes back once it hits a dead end.</p>
+
+<p>Strategy of DFS is to search deeper in the graph whenever possible</p>
+
+<p>Advantages of DFS:</p>
+
+<ol>
+<li>It is cheap on memory.</li>
+<li>It can use recursion.</li>
+<li>It is better when there are many solution nodes.</li>
+</ol>
+
+
+<p>Performance:</p>
+
+<ol>
+<li>Completeness: Is algorithm guaranteed to find a solution if one exists.</li>
+<li>Optimality: Whether the algorithm finds the optimal solution.</li>
+<li>Time complexity: How long the algorithm takes the find the solution.</li>
+<li>Space complexity: How much memory is needed.</li>
+</ol>
+
+
+<p>Measuring complexity:</p>
+
+<ol>
+<li>Branching factor(b): Maximum number of successors of any node.</li>
+<li>Depth(m): Shallowest goal node in number of steps or levels.</li>
+<li>Maximum depth: Maximum depth of the search tree.</li>
+</ol>
+
 ]]></content>
   </entry>
   
