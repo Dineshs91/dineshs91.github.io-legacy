@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: jquery | My code … :) :)]]></title>
+  <link href="http://Dineshs91.github.io/blog/categories/jquery/atom.xml" rel="self"/>
+  <link href="http://Dineshs91.github.io/"/>
+  <updated>2014-01-23T00:20:17+05:30</updated>
+  <id>http://Dineshs91.github.io/</id>
+  <author>
+    <name><![CDATA[DINESH S]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Accessing property of an element]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/01/23/accessing-property-of-an-element/"/>
+    <updated>2014-01-23T00:17:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/01/23/accessing-property-of-an-element</id>
+    <content type="html"><![CDATA[<p>For accessing the property of an element, select the element using a valid selector and use prop().</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: javascript </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>$(‘ ‘).prop(‘disabled’, false);&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+</feed>

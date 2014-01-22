@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-01-19T13:17:49+05:30</updated>
+  <updated>2014-01-23T00:20:17+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Accessing property of an element]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/01/23/accessing-property-of-an-element/"/>
+    <updated>2014-01-23T00:17:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/01/23/accessing-property-of-an-element</id>
+    <content type="html"><![CDATA[<p>For accessing the property of an element, select the element using a valid selector and use prop().</p>
+
+<figure class='code'><figcaption><span>lang: javascript </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$(‘ ‘).prop(‘disabled’, false);</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Usage of defaultdict]]></title>
@@ -90,7 +104,9 @@ This program is case sensitive so it counts ‘A’ and ‘a’ seperately. If y
 <p>DFS always expands one of the nodes at the deepest level of the tree.
 The search goes back once it hits a dead end.</p>
 
-<p>Strategy of DFS is to search deeper in the graph whenever possible</p>
+<p>Strategy of DFS is to search deeper in the graph whenever possible.</p>
+
+<p>DFS progresses by expanding the first child node of the search tree that appears and thus going deeper and deeper until a goal node is found, or until it hits a node that has no children. Then the search backtracks, returning to the most recent node it hasn’t finished exploring.</p>
 
 <p>Advantages of DFS:</p>
 
@@ -101,7 +117,7 @@ The search goes back once it hits a dead end.</p>
 </ol>
 
 
-<p>Performance:</p>
+<p>Performance parameters:</p>
 
 <ol>
 <li>Completeness: Is algorithm guaranteed to find a solution if one exists.</li>
@@ -119,6 +135,35 @@ The search goes back once it hits a dead end.</p>
 <li>Maximum depth: Maximum depth of the search tree.</li>
 </ol>
 
+
+<p>Analysis:</p>
+
+<p>Time: O(|V| + |E|)
+Space: O(|V|)</p>
+
+<p>Application:</p>
+
+<p>Search problems in artificial intelligence.</p>
+
+<p>Algorithm:</p>
+
+<p>Visit a node, then push all of the nodes to be visited onto the stack. To find the next node to visit we simply pop a node of the stack, and then push all the nodes connected to that one onto the stack as well and we continue doing this until all nodes are visited.</p>
+
+<p>There are 2 ways of doing this.</p>
+
+<ol>
+<li><p>Using stack.</p></li>
+<li><p>Using recursion.</p></li>
+</ol>
+
+
+<p>DFS(v):</p>
+
+<pre><code>visited[v] = 1
+for all w adjacent to v:
+    if !visited:
+        DFS(w)
+</code></pre>
 ]]></content>
   </entry>
   
