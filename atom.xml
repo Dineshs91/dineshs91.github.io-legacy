@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-01-23T00:26:25+05:30</updated>
+  <updated>2014-01-23T00:32:56+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Position property in css]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/01/23/position-property-in-css/"/>
+    <updated>2014-01-23T00:31:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/01/23/position-property-in-css</id>
+    <content type="html"><![CDATA[<p>This property is very important in css.</p>
+
+<p>It can have the following values</p>
+
+<ol>
+<li>Absolute</li>
+<li>Fixed</li>
+<li>Relative</li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Accessing property of an element]]></title>
