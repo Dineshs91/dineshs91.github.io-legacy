@@ -9,9 +9,13 @@
 
 <meta name="author" content="DINESH S"> 
 
-<meta name="description" content=" This property is very important in css. It can have the following values Absolute
-Fixed
-Relative Jan 23rd, 2014 css Comments "> <meta name="keywords" content="">
+<meta name="description" content=" lang: javascript 1
+2
+3
+4
+5
+$(‘select’).live(‘key press’, function(e){ if(e.which == 13){ $(‘form’).submit(); }
+}); Jan 23rd, 2014 jquery Comments "> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -107,6 +111,63 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/01/23/making-enter-button-to-work-from-dropdown-box/">
+		
+			Making Enter Button to Work From Dropdown Box</a>
+	</h2>
+	<div class="entry-content">
+		
+
+<figure class='code'><figcaption><span>lang: javascript </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$(‘select’).live(‘key press’, function(e){
+</span><span class='line'>    if(e.which == 13){
+</span><span class='line'>  $(‘form’).submit();
+</span><span class='line'>    }
+</span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-23T22:00:00+05:30" pubdate data-updated="true">Jan 23<span>rd</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/jquery/'>jquery</a>
+
+
+</div>
+	
+		<span class="comments"><a href="/blog/2014/01/23/making-enter-button-to-work-from-dropdown-box//index.html#disqus_thread">Comments</a></span>
+	
+</div></article>
 
 
     <article class="post">
@@ -790,150 +851,6 @@ You can have a look at <a href="https://github.com/Dineshs91/alphabet-frequency"
 </div>
 	
 		<span class="comments"><a href="/blog/2013/07/20/using-modular-arithmetic//index.html#disqus_thread">Comments</a></span>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/07/17/primality-testing/">
-		
-			Primality Testing</a>
-	</h2>
-	<div class="entry-content">
-		<p>Here we are checking the prime numbers from 1 to 10**5. In both the methods we store the calculated prime numbers in a list and are used for calculating other prime numbers. I have used timeit module to check the execution time. The time is in seconds.</p>
-
-<p>1.) In the first method we use lists which contain the prime numbers that are calculated.
-We divide the number(n) by prime numbers less than half of the number(n/2).</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>from timeit import time
-</span><span class='line'>
-</span><span class='line'>primeno = []
-</span><span class='line'>
-</span><span class='line'>def prime(n):
-</span><span class='line'>  for i in xrange(2, n + 1):
-</span><span class='line'>    count = 0
-</span><span class='line'>    for j in primeno:
-</span><span class='line'>      if i % j == 0 and j &lt;= (i/2)+1:
-</span><span class='line'>        count += 1
-</span><span class='line'>        break
-</span><span class='line'>    if count == 0:
-</span><span class='line'>      primeno.append(i)
-</span><span class='line'>
-</span><span class='line'>start_time = time.time()
-</span><span class='line'>prime(10**5)
-</span><span class='line'>end_time = time.time()
-</span><span class='line'>total_time = end_time - start_time # Time in seconds
-</span><span class='line'>#print primeno
-</span><span class='line'>print 'Total time:', total_time</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2.) In this method also we use lists but we divide the number(n) by the prime numbers which are less than the square root of the number(sqrt(n)).</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>import math
-</span><span class='line'>from timeit import time
-</span><span class='line'>
-</span><span class='line'>primeno = []
-</span><span class='line'>
-</span><span class='line'>def prime(n):
-</span><span class='line'>    for i in xrange(2, n + 1):
-</span><span class='line'>        sq = math.sqrt(i)
-</span><span class='line'>        count = 0
-</span><span class='line'>        for j in primeno:
-</span><span class='line'>            if j > sq + 1:
-</span><span class='line'>                break
-</span><span class='line'>            if i % j == 0:
-</span><span class='line'>                count += 1
-</span><span class='line'>                break
-</span><span class='line'>        if count == 0:
-</span><span class='line'>            primeno.append(i)
-</span><span class='line'>
-</span><span class='line'>start_time = time.time()
-</span><span class='line'>prime(10**5)
-</span><span class='line'>end_time = time.time()
-</span><span class='line'>total_time = end_time - start_time # Time in seconds
-</span><span class='line'>#print primeno
-</span><span class='line'>print 'Total time:', total_time</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Surely the second program runs faster. Run the program and see for yourself the difference in time between the two.
-If you want the prime numbers just uncomment the line &ldquo;#print primeno&rdquo;</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-17T13:28:00+05:30" pubdate data-updated="true">Jul 17<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/python/'>python</a>
-
-
-</div>
-	
-		<span class="comments"><a href="/blog/2013/07/17/primality-testing//index.html#disqus_thread">Comments</a></span>
 	
 </div></article>
 
