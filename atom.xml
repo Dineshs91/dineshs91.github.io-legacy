@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-01-23T22:03:14+05:30</updated>
+  <updated>2014-02-01T00:16:59+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fibonacci number]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/01/31/fibonacci-number/"/>
+    <updated>2014-01-31T23:59:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/01/31/fibonacci-number</id>
+    <content type="html"><![CDATA[<p>A number is a fibonacci number if 5*N2 +&ndash; 4 is a perfect square. sqrt(r1) % 1 == 0. This is for checking if the number is a perfect square.</p>
+
+<p>r1 = sqrt(5<em>n**2+4)
+r2 = sqrt(5</em>n**2-4)
+isSquare = r1 % 1 == 0 or r2 % 1 == 0
+if(isSquare):</p>
+
+<pre><code>print “isFibo”
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Making enter button to work from dropdown box]]></title>
