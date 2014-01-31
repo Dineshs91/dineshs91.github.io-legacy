@@ -4,7 +4,7 @@
   <title><![CDATA[Category: jquery | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/jquery/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-02-01T00:20:52+05:30</updated>
+  <updated>2014-02-01T00:31:03+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Dynamically add rows to a table]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/02/01/dynamically-add-rows-to-a-table/"/>
+    <updated>2014-02-01T00:28:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/02/01/dynamically-add-rows-to-a-table</id>
+    <content type="html"><![CDATA[<p>If you want to dynamically add rows to an existing table use clone.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>tr = $(‘table tbody tr:last’).clone();
+</span><span class='line'>tr.appendTo($(‘table’));&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This adds rows at the bottom of the table.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Serialize a form]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/02/01/serialize-a-form/"/>
+    <updated>2014-02-01T00:25:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/02/01/serialize-a-form</id>
+    <content type="html"><![CDATA[<p>This method creates a text string in standard URL-encoded notation.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>$(‘form’).serialize();&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Making enter button to work from dropdown box]]></title>
