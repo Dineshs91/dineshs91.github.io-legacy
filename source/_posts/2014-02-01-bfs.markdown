@@ -1,0 +1,13 @@
+---
+layout: post
+title: "BFS"
+date: 2014-02-01 00:44
+comments: true
+categories: algorithms
+---
+
+Breadth First Search (BFS).
+
+BFS explores in levels. It explores all the nodes and then moves to the next node unlike DFS which explores the nodes of siblings until a node doesn’t have a sibling. BFS moves like a wave. Here a queue is used.
+
+The path found using BFS is the shortest path. BFS takes less time than DFS to explore. But it can take more memory which depends on the branching factor.
