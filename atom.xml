@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-02-01T00:31:03+05:30</updated>
+  <updated>2014-02-01T00:51:38+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[BFS]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/02/01/bfs/"/>
+    <updated>2014-02-01T00:44:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/02/01/bfs</id>
+    <content type="html"><![CDATA[<p>Breadth First Search (BFS).</p>
+
+<p>BFS explores in levels. It explores all the nodes and then moves to the next node unlike DFS which explores the nodes of siblings until a node doesn’t have a sibling. BFS moves like a wave. Here a queue is used.</p>
+
+<p>The path found using BFS is the shortest path. BFS takes less time than DFS to explore. But it can take more memory which depends on the branching factor.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Dynamically add rows to a table]]></title>
@@ -735,21 +748,6 @@ Change the value of string if you want any custom string, similarly change the f
     <updated>2013-07-05T23:59:00+05:30</updated>
     <id>http://Dineshs91.github.io/blog/2013/07/05/python</id>
     <content type="html"><![CDATA[<p>Python is an awesome scripting language. If you start learning python then you can wave goodbye to braces. Python is all about indentation. Python code is very clear and easy to understand. There are two versions of python you can choose from python 2 and python 3. Python 3 is the latest one but python 2 is also receiving updates and most of them use python 2. Its your choice to start with python 2 or 3. Let&rsquo;s talk about python in detail in the next post.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[learning python]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/05/learning-python/"/>
-    <updated>2013-07-05T23:48:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/05/learning-python</id>
-    <content type="html"><![CDATA[<p>There are a lot of ways to learn python</p>
-
-<p>The first way is to learn from the python official website &lsquo;python.org&rsquo;. Check the documentation section for tutorials. These tutorials are great and is a very good starting  point. All the basic concepts are there with sample examples.And the great thing about python is you can run the code in the terminal itself without having to create a new file each time you want to test a code. Just type python in terminal and you have an interpreter. You can run all the commands there.</p>
-
-<p>Next have a look at &lsquo;learnpythonthehardway&rsquo; site. It also provides some good tutorials.</p>
-
-<p>After learning the basics check this site &ldquo;<a href="http://code.activestate.com/recipes/langs/python/">http://code.activestate.com/recipes/langs/python/</a>&rdquo;. It has great python programs. Learn from others code, look what libraries they are using. The best way to learn programming is by reading code.</p>
 ]]></content>
   </entry>
   
