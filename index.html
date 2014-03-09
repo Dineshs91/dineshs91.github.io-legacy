@@ -9,7 +9,19 @@
 
 <meta name="author" content="DINESH S"> 
 
-<meta name="description" content="Breadth First Search (BFS). BFS explores in levels. It explores all the nodes and then moves to the next node unlike DFS which explores the nodes of &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="Sieve of eratosthenes is used to find the prime numbers. 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+def sieve(limit): p = [True] * limit p[0] = p[1] = False for i, &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -105,6 +117,78 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/09/sieve-of-eratosthenes/">
+		
+			Sieve of Eratosthenes</a>
+	</h2>
+	<div class="entry-content">
+		<p>Sieve of eratosthenes is used to find the prime numbers.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def sieve(limit):
+</span><span class='line'>    p = [True] * limit
+</span><span class='line'>    p[0] = p[1] = False
+</span><span class='line'>    for i, isprime in enumerate(p):
+</span><span class='line'>        if isprime:
+</span><span class='line'>            for n in xrange(i * i, limit, i):
+</span><span class='line'>                p[n] = False
+</span><span class='line'>    return p
+</span><span class='line'>
+</span><span class='line'>p = sieve(100)
+</span><span class='line'>for i, j in enumerate(p):
+</span><span class='line'>    print i,’—>’,j</span></code></pre></td></tr></table></div></figure>
+
+
+<p>sieve(100) &ndash; Has a list of first 100 numbers and whether they are prime or not.</p>
+
+<p>Runtime: O(log log n)</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-09T14:02:00+05:30" pubdate data-updated="true">Mar 9<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/python/'>python</a>
+
+
+</div>
+	
+		<span class="comments"><a href="/blog/2014/03/09/sieve-of-eratosthenes//index.html#disqus_thread">Comments</a></span>
+	
+</div></article>
 
 
     <article class="post">
@@ -661,55 +745,6 @@ for all w adjacent to v:
 </div>
 	
 		<span class="comments"><a href="/blog/2014/01/11/dfs-demystified//index.html#disqus_thread">Comments</a></span>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/08/07/alphabet-frequency/">
-		
-			Alphabet-frequency</a>
-	</h2>
-	<div class="entry-content">
-		<p>Alphabet-frequency is a program i have written using python2.7 which graphically displays the frequency of letters in a specified file.
-You can have a look at <a href="https://github.com/Dineshs91/alphabet-frequency">https://github.com/Dineshs91/alphabet-frequency</a> .</p>
-
-<p>You require matplotlib and numpy modules to run this program.</p>
-
-<p>In the first few lines i have imported the necessary modules. Matplotlib module is used for plotting data. arparse module is used for command line argument parsing.</p>
-
-<p>There are a lot of options which you can provide. The default option is alphabets(lower and upper case). This is a very simple program. You can understand it by looking at the code itself. Output is a graph which shows how frequently a character appears in a file.</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-07T15:28:00+05:30" pubdate data-updated="true">Aug 7<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/python/'>python</a>
-
-
-</div>
-	
-		<span class="comments"><a href="/blog/2013/08/07/alphabet-frequency//index.html#disqus_thread">Comments</a></span>
 	
 </div></article>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-02-01T00:51:38+05:30</updated>
+  <updated>2014-03-09T14:16:12+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sieve of eratosthenes]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/03/09/sieve-of-eratosthenes/"/>
+    <updated>2014-03-09T14:02:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/03/09/sieve-of-eratosthenes</id>
+    <content type="html"><![CDATA[<p>Sieve of eratosthenes is used to find the prime numbers.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def sieve(limit):
+</span><span class='line'>    p = [True] * limit
+</span><span class='line'>    p[0] = p[1] = False
+</span><span class='line'>    for i, isprime in enumerate(p):
+</span><span class='line'>        if isprime:
+</span><span class='line'>            for n in xrange(i * i, limit, i):
+</span><span class='line'>                p[n] = False
+</span><span class='line'>    return p
+</span><span class='line'>
+</span><span class='line'>p = sieve(100)
+</span><span class='line'>for i, j in enumerate(p):
+</span><span class='line'>    print i,’—>’,j</span></code></pre></td></tr></table></div></figure>
+
+
+<p>sieve(100) &ndash; Has a list of first 100 numbers and whether they are prime or not.</p>
+
+<p>Runtime: O(log log n)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[BFS]]></title>
@@ -739,15 +778,6 @@ Change the value of string if you want any custom string, similarly change the f
 
 
 <p>In this code student1 is the object. <strong>init</strong> is like constructor in c which is used to initialise the data. The name self holds the object itself. In this code &lsquo;self&rsquo; is the object student1. You can create as many objects as you like.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Python]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/05/python/"/>
-    <updated>2013-07-05T23:59:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/05/python</id>
-    <content type="html"><![CDATA[<p>Python is an awesome scripting language. If you start learning python then you can wave goodbye to braces. Python is all about indentation. Python code is very clear and easy to understand. There are two versions of python you can choose from python 2 and python 3. Python 3 is the latest one but python 2 is also receiving updates and most of them use python 2. Its your choice to start with python 2 or 3. Let&rsquo;s talk about python in detail in the next post.</p>
 ]]></content>
   </entry>
   

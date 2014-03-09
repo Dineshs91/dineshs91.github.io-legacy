@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-02-01T00:51:38+05:30</updated>
+  <updated>2014-03-09T14:16:12+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sieve of eratosthenes]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/03/09/sieve-of-eratosthenes/"/>
+    <updated>2014-03-09T14:02:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/03/09/sieve-of-eratosthenes</id>
+    <content type="html"><![CDATA[<p>Sieve of eratosthenes is used to find the prime numbers.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def sieve(limit):&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>p = [True] * limit
+</span><span class='line'>p[0] = p[1] = False
+</span><span class='line'>for i, isprime in enumerate(p):
+</span><span class='line'>    if isprime:
+</span><span class='line'>        for n in xrange(i * i, limit, i):
+</span><span class='line'>            p[n] = False
+</span><span class='line'>return p
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>p = sieve(100)
+</span><span class='line'>for i, j in enumerate(p):&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>print i,’—&gt;’,j
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>sieve(100) &ndash; Has a list of first 100 numbers and whether they are prime or not.</p>
+
+<p>Runtime: O(log log n)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Usage of defaultdict]]></title>
@@ -250,75 +300,6 @@ You can have a look at <a href="https://github.com/Dineshs91/alphabet-frequency"
 </span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>If you want to use sorting in your program always use the builtin function &lsquo;sort&rsquo;. It is always efficient than what we can write.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[List comprehension]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/23/list-comprehension/"/>
-    <updated>2013-07-23T11:12:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/23/list-comprehension</id>
-    <content type="html"><![CDATA[<p>List comprehensions are very useful. Here are some examples</p>
-
-<p>1.) Get input and store it in a list</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [raw_input() for _ in range(n)]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
-
-<p>Here &lsquo;n&rsquo; is the number of elements. For example if you want to store 5 names then &lsquo;n&rsquo; is 5.</p>
-
-<p>2.) Convert numbers from a list which are stored in string to int</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [int(i) for i in lis]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
-
-<p>Here &lsquo;lis&rsquo; is the list which contains the numbers.</p>
-
-<p>3.) If we want a multidimensional list</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [ [0 for col in range(5)] for row in range(10)]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
-
-<p>This creates a multidimensional list containing 10 rows and 5 columns.</p>
-
-<p>4.) Get the numbers greater than 100 from another list</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i for i in lis if i > 100]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
-
-<p>&lsquo;lis&rsquo; is the list which contains the numbers. The numbers in list &lsquo;lis&rsquo; which are greater than 100 are added to list &lsquo;a&rsquo;</p>
-
-<p>5.) If you want to add a number to all the numbers in a list</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;blockquote>&lt;p>a = [i+3 for i in lis]</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote></blockquote>
-
-<p>We are adding 3 to all the numbers in &lsquo;lis&rsquo; and storing in &lsquo;a&rsquo;. If you want to store it in &lsquo;lis&rsquo; itself replace a with lis.</p>
 ]]></content>
   </entry>
   
