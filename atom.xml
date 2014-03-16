@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-03-09T14:16:12+05:30</updated>
+  <updated>2014-03-16T12:43:20+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Exor sum of all non empty subsets in a list]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/03/16/exor-sum-of-all-non-empty-subsets-in-a-list/"/>
+    <updated>2014-03-16T12:33:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/03/16/exor-sum-of-all-non-empty-subsets-in-a-list</id>
+    <content type="html"><![CDATA[<p>Consider one bit position at a time. How many of the terms have bit i set? The terms that have bit i set are exactly those that correspond to a subset that contains an odd number of inputs that have bit i set.</p>
+
+<p>If there is any input that has bit i set, then exactly half of the 2N possible subsets will be of this form, and so they will contribute 2N−1+i to the final sum.</p>
+
+<p>On the other hand, if no input has bit i set, then of course no terms will have that bit set either.</p>
+
+<p>Summing these contributions of 2N−1+i per bit position is easy enough &mdash; the final sum will simply be 2N−1 times the bitwise OR of all the inputs.</p>
+
+<p>soon: (2 ** (N &ndash; 1)) * bitwise OR of all the inputs.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Sieve of eratosthenes]]></title>
@@ -744,40 +761,6 @@ Change the value of string if you want any custom string, similarly change the f
 <a href="http://www.skulpt.org/">http://www.skulpt.org/</a></p>
 
 <p>Note: They may not have all the functionalities. Check the documentation for supported features.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[objects in python]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/09/objects-in-python/"/>
-    <updated>2013-07-09T11:37:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/09/objects-in-python</id>
-    <content type="html"><![CDATA[<p>Objects are used to access the methods of a class. Take a look at the following code.</p>
-
-<figure class='code'><figcaption><span>objects in python lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>class Students(object):
-</span><span class='line'>  def __init__(self, name, no):
-</span><span class='line'>    self.name = name
-</span><span class='line'>    self.no = no
-</span><span class='line'>
-</span><span class='line'>  def display(self):
-</span><span class='line'>    print 'Student name: %s and no: %d' %(self.name, self.no)
-</span><span class='line'>
-</span><span class='line'>student1 = Students('mike', 15)
-</span><span class='line'>student1.display()</span></code></pre></td></tr></table></div></figure>
-
-
-<p>In this code student1 is the object. <strong>init</strong> is like constructor in c which is used to initialise the data. The name self holds the object itself. In this code &lsquo;self&rsquo; is the object student1. You can create as many objects as you like.</p>
 ]]></content>
   </entry>
   

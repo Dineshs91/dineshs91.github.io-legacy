@@ -9,8 +9,7 @@
 
 <meta name="author" content="DINESH S"> 
 
-<meta name="description" content="Alphabet-frequency is a program i have written using python2.7 which graphically displays the frequency of letters in a specified file.
-You can have &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="Depth First Search (DFS). A DFS explores a path all the way to a leaf before backtracking and exploring another path. DFS always expands one of the &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -106,6 +105,114 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/01/11/dfs-demystified/">
+		
+			DFS Demystified</a>
+	</h2>
+	<div class="entry-content">
+		<p>Depth First Search (DFS).</p>
+
+<p>A DFS explores a path all the way to a leaf before backtracking and exploring another path.</p>
+
+<p>DFS always expands one of the nodes at the deepest level of the tree.
+The search goes back once it hits a dead end.</p>
+
+<p>Strategy of DFS is to search deeper in the graph whenever possible.</p>
+
+<p>DFS progresses by expanding the first child node of the search tree that appears and thus going deeper and deeper until a goal node is found, or until it hits a node that has no children. Then the search backtracks, returning to the most recent node it hasn’t finished exploring.</p>
+
+<p>Advantages of DFS:</p>
+
+<ol>
+<li>It is cheap on memory.</li>
+<li>It can use recursion.</li>
+<li>It is better when there are many solution nodes.</li>
+</ol>
+
+
+<p>Performance parameters:</p>
+
+<ol>
+<li>Completeness: Is algorithm guaranteed to find a solution if one exists.</li>
+<li>Optimality: Whether the algorithm finds the optimal solution.</li>
+<li>Time complexity: How long the algorithm takes the find the solution.</li>
+<li>Space complexity: How much memory is needed.</li>
+</ol>
+
+
+<p>Measuring complexity:</p>
+
+<ol>
+<li>Branching factor(b): Maximum number of successors of any node.</li>
+<li>Depth(m): Shallowest goal node in number of steps or levels.</li>
+<li>Maximum depth: Maximum depth of the search tree.</li>
+</ol>
+
+
+<p>Analysis:</p>
+
+<p>Time: O(|V| + |E|)
+Space: O(|V|)</p>
+
+<p>Application:</p>
+
+<p>Search problems in artificial intelligence.</p>
+
+<p>Algorithm:</p>
+
+<p>Visit a node, then push all of the nodes to be visited onto the stack. To find the next node to visit we simply pop a node of the stack, and then push all the nodes connected to that one onto the stack as well and we continue doing this until all nodes are visited.</p>
+
+<p>There are 2 ways of doing this.</p>
+
+<ol>
+<li><p>Using stack.</p></li>
+<li><p>Using recursion.</p></li>
+</ol>
+
+
+<p>DFS(v):</p>
+
+<pre><code>visited[v] = 1
+for all w adjacent to v:
+    if !visited:
+        DFS(w)
+</code></pre>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-11T19:29:00+05:30" pubdate data-updated="true">Jan 11<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/algorithms/'>algorithms</a>
+
+
+</div>
+	
+		<span class="comments"><a href="/blog/2014/01/11/dfs-demystified//blog/page/2/index.html#disqus_thread">Comments</a></span>
+	
+</div></article>
 
 
     <article class="post">
@@ -835,73 +942,6 @@ Change the value of string if you want any custom string, similarly change the f
 </div>
 	
 		<span class="comments"><a href="/blog/2013/07/09/trying-python-in-browser//blog/page/2/index.html#disqus_thread">Comments</a></span>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/07/09/objects-in-python/">
-		
-			Objects in Python</a>
-	</h2>
-	<div class="entry-content">
-		<p>Objects are used to access the methods of a class. Take a look at the following code.</p>
-
-<figure class='code'><figcaption><span>objects in python lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>class Students(object):
-</span><span class='line'>  def __init__(self, name, no):
-</span><span class='line'>    self.name = name
-</span><span class='line'>    self.no = no
-</span><span class='line'>
-</span><span class='line'>  def display(self):
-</span><span class='line'>    print 'Student name: %s and no: %d' %(self.name, self.no)
-</span><span class='line'>
-</span><span class='line'>student1 = Students('mike', 15)
-</span><span class='line'>student1.display()</span></code></pre></td></tr></table></div></figure>
-
-
-<p>In this code student1 is the object. <strong>init</strong> is like constructor in c which is used to initialise the data. The name self holds the object itself. In this code &lsquo;self&rsquo; is the object student1. You can create as many objects as you like.</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-09T11:37:00+05:30" pubdate data-updated="true">Jul 9<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/python/'>python</a>
-
-
-</div>
-	
-		<span class="comments"><a href="/blog/2013/07/09/objects-in-python//blog/page/2/index.html#disqus_thread">Comments</a></span>
 	
 </div></article>
 
