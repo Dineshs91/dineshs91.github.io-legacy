@@ -4,6 +4,7 @@ title: "A great Programmer/Hacker"
 date: 2014-04-10 12:57
 comments: true
 categories: articles
+sharing: true
 ---
 
 I’ve always wondered what it takes to become a great programmer. I kept pondering on this question for a year. I’ve seen programmers around me, after a lot of research i found that  a programmer becomes a great programmer by following certain ideas. I am laying down some ideas which i think makes a great programmer.
