@@ -10,7 +10,7 @@ I’ve always wondered what it takes to become a great programmer. I kept ponder
 
 1. A great programmer always thinks how he can make a computer work the way he wants it to.
 
-The definition of Hacker by paul graham: A hacker is a person who can make the computer work the way he want’s it to work.
+    The definition of Hacker by paul graham: A hacker is a person who can make the computer work the way he want’s it to work.
 
 2. Hackers don’t have a ’no’. This is the difference between a programer and a hacker. Programmer trusts his skill sets and if a problem is beyond his understanding then he will give you a ‘no’. But hackers definitely will find a workaround and they will succeed in that.
 
@@ -22,13 +22,13 @@ To become a hacker.
 
 1. Don’t program like a fool. Imagination is the key here. Take this example,
 
-int a = 10;
+    int a = 10;
 
-Ordinay programmer’s thought: Variable a with value 10
+    Ordinay programmer’s thought: Variable a with value 10
 
-Great programmer’s thought: Variable a with value 10 and takes 2 bytes of memory. He imagines a box with value 10. It occupies some space(which is memory).
+    Great programmer’s thought: Variable a with value 10 and takes 2 bytes of memory. He imagines a box with value 10. It occupies some space(which is memory).
 
-It is evident from the example that the difference is the way they think. As you program build something in your mind. This will give you amazing results. Don’t simply program, live with it.
+    It is evident from the example that the difference is the way they think. As you program build something in your mind. This will give you amazing results. Don’t simply program, live with it.
 
 2. You will require a lot of skills. Programming is just the beginning. It is the thinking that is important. Say for example, you have learnt C language. You are an expert in it. But what will you do with it. It’s like learning english and never speaking in english. So an idea is important. Linus torvalds idea was to create a UNIX like operating system, so he created it. As you can see idea is the first part, programming comes later. He used his skills to create linux. Similarly Facebook was an idea, so was amazon. So “THINK FIRST CODE LATER”.
 
