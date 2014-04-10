@@ -66,7 +66,6 @@ $(document).ready(
 	<li><a href="/blog/categories/articles">Articles</a></li>
     <li><a href="/blog/categories/algorithms">Algorithms</a></li>
 	<li><a href="/">Blog</a></li>
-	<li><a href="/blog/categories/css">CSS</a></li>
 	<li><a href="/blog/categories/java">Java</a></li>
 	<li><a href="/blog/categories/jquery">Jquery</a></li>
 	<li><a href="/blog/categories/python">Python</a></li>
@@ -82,7 +81,6 @@ $(document).ready(
 	<li><a href="/blog/categories/articles">Articles</a></li>
     <li><a href="/blog/categories/algorithms">Algorithms</a></li>
 	<li><a href="/">Blog</a></li>
-	<li><a href="/blog/categories/css">CSS</a></li>
 	<li><a href="/blog/categories/java">Java</a></li>
 	<li><a href="/blog/categories/jquery">Jquery</a></li>
 	<li><a href="/blog/categories/python">Python</a></li>
@@ -562,57 +560,6 @@ $(document).ready(
     <article class="post">
 	<h2 class="title">
 		
-		<a href="/blog/2014/01/23/position-property-in-css/">
-		
-			Position Property in Css</a>
-	</h2>
-	<div class="entry-content">
-		<p>This property is very important in css.</p>
-
-<p>It can have the following values</p>
-
-<ol>
-<li>Absolute</li>
-<li>Fixed</li>
-<li>Relative</li>
-</ol>
-
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-23T00:31:00+05:30" pubdate data-updated="true">Jan 23<span>rd</span>, 2014</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/css/'>css</a>
-
-
-</div>
-	
-		<span class="comments"><a href="/blog/2014/01/23/position-property-in-css//index.html#disqus_thread">Comments</a></span>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
 		<a href="/blog/2014/01/23/accessing-property-of-an-element/">
 		
 			Accessing Property of an Element</a>
@@ -653,6 +600,104 @@ $(document).ready(
 </div>
 	
 		<span class="comments"><a href="/blog/2014/01/23/accessing-property-of-an-element//index.html#disqus_thread">Comments</a></span>
+	
+</div></article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/01/14/usage-of-defaultdict/">
+		
+			Usage of Defaultdict</a>
+	</h2>
+	<div class="entry-content">
+		<p>defaultdict is a built in function in python. It is available in collections package.</p>
+
+<p>1.) 1st usage. If you want to know the frequency of characters in a word,</p>
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>from collections import defaultdict
+</span><span class='line'>
+</span><span class='line'>a = “Amazon”
+</span><span class='line'>res = defaultdict(int)
+</span><span class='line'>for k in a:
+</span><span class='line'>    res[k] += 1
+</span><span class='line'>print res</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The result is {&lsquo;A&rsquo;: 1, &rsquo;m&#8217;: 1, &lsquo;a&rsquo;: 1, &lsquo;z&rsquo;: 1, &lsquo;o&rsquo;: 1, &lsquo;n&rsquo;: 1}
+This program is case sensitive so it counts ‘A’ and ‘a’ seperately. If you want the program to be case insensitive just change to a.lower() in for loop.</p>
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>from collections import defaultdict
+</span><span class='line'>
+</span><span class='line'>a = “Amazon”
+</span><span class='line'>res = defaultdict(int)
+</span><span class='line'>for k in a.lower():
+</span><span class='line'>    res[k] += 1
+</span><span class='line'>print res</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The result is {&lsquo;a&rsquo;: 2, &rsquo;m&#8217;: 1, &lsquo;z&rsquo;: 1, &lsquo;o&rsquo;: 1, &lsquo;n&rsquo;: 1}</p>
+
+<p>2.) Using a list in defaultdict.</p>
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>s = [(‘yellow’, 1), (‘blue’, 2), (‘yellow’, 3), (‘blue’, 4)]
+</span><span class='line'>d = defaultdict(list)
+</span><span class='line'>for k, v in s:
+</span><span class='line'>    d[k].append(v)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The result is [(&lsquo;blue&rsquo;, [2, 4]), (&lsquo;yellow&rsquo;, [1, 3])]</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-14T08:55:00+05:30" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/python/'>python</a>
+
+
+</div>
+	
+		<span class="comments"><a href="/blog/2014/01/14/usage-of-defaultdict//index.html#disqus_thread">Comments</a></span>
 	
 </div></article>
 

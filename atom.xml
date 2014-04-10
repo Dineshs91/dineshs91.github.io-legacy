@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-04-10T22:02:44+05:30</updated>
+  <updated>2014-04-10T22:10:22+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -195,24 +195,6 @@
 </span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
 
 
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Position property in css]]></title>
-    <link href="http://Dineshs91.github.io/blog/2014/01/23/position-property-in-css/"/>
-    <updated>2014-01-23T00:31:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2014/01/23/position-property-in-css</id>
-    <content type="html"><![CDATA[<p>This property is very important in css.</p>
-
-<p>It can have the following values</p>
-
-<ol>
-<li>Absolute</li>
-<li>Fixed</li>
-<li>Relative</li>
-</ol>
 
 ]]></content>
   </entry>
@@ -778,6 +760,30 @@ For more on timeit module check the python docs.</p>
 
 <p>This program can find string of any length and replace it with any string. If you have any better program please put it in the comments.
 Change the value of string if you want any custom string, similarly change the find and replace variables.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Trying python in browser]]></title>
+    <link href="http://Dineshs91.github.io/blog/2013/07/09/trying-python-in-browser/"/>
+    <updated>2013-07-09T15:31:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2013/07/09/trying-python-in-browser</id>
+    <content type="html"><![CDATA[<p>You can use these sites to test your python code.</p>
+
+<p><a href="http://repl.it">http://repl.it</a></p>
+
+<p><img src="http://Dineshs91.github.io/images/repl.png" /></p>
+
+<p><a href="http://www.codeskulptor.org">http://www.codeskulptor.org</a>
+<img src="http://Dineshs91.github.io/images/codeskulptor.png" /></p>
+
+<p>or try code mirror
+<a href="http://codemirror.net/">http://codemirror.net/</a></p>
+
+<p>skulpt is another program that can run in browser. This is an entirely in browser implementation of python.
+<a href="http://www.skulpt.org/">http://www.skulpt.org/</a></p>
+
+<p>Note: They may not have all the functionalities. Check the documentation for supported features.</p>
 ]]></content>
   </entry>
   
