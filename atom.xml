@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-03-16T12:43:20+05:30</updated>
+  <updated>2014-04-10T13:40:22+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A great Programmer/Hacker]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/04/10/a-programmer-or-a-hacker/"/>
+    <updated>2014-04-10T12:57:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/04/10/a-programmer-or-a-hacker</id>
+    <content type="html"><![CDATA[<p>I’ve always wondered what it takes to become a great programmer. I kept pondering on this question for a year. I’ve seen programmers around me, after a lot of research i found that  a programmer becomes a great programmer by following certain ideas. I am laying down some ideas which i think makes a great programmer.</p>
+
+<ol>
+<li>A great programmer always thinks how he can make a computer work the way he wants it to.</li>
+</ol>
+
+
+<p>The definition of Hacker by paul graham: A hacker is a person who can make the computer work the way he want’s it to work.</p>
+
+<ol>
+<li><p>Hackers don’t have a ’no’. This is the difference between a programer and a hacker. Programmer trusts his skill sets and if a problem is beyond his understanding then he will give you a ‘no’. But hackers definitely will find a workaround and they will succeed in that.</p></li>
+<li><p>They write efficient, reliable and readable code naturally. They never think of it in particular.</p></li>
+<li><p>As a child we used to dream a lot of things. But as time goes by we stop dreaming, our imagination becomes zero. For every fascinating thought that comes to our mind, we throw it away saying it’s impossible, such a thing could never happen. This is wrong, imagination is the one thing that has no boundaries, imagination is what brought iPod, iPhone to reality. Explore all dimensions, as steve jobs explored simplicity. Who would have thought simplicity is such an important thing. Don’t take anything for granted. Think why something is designed the way it is.</p></li>
+</ol>
+
+
+<p>To become a hacker.</p>
+
+<ol>
+<li>Don’t program like a fool. Imagination is the key here. Take this example,</li>
+</ol>
+
+
+<p>int a = 10;</p>
+
+<p>Ordinay programmer’s thought: Variable a with value 10</p>
+
+<p>Great programmer’s thought: Variable a with value 10 and takes 2 bytes of memory. He imagines a box with value 10. It occupies some space(which is memory).</p>
+
+<p>It is evident from the example that the difference is the way they think. As you program build something in your mind. This will give you amazing results. Don’t simply program, live with it.</p>
+
+<ol>
+<li><p>You will require a lot of skills. Programming is just the beginning. It is the thinking that is important. Say for example, you have learnt C language. You are an expert in it. But what will you do with it. It’s like learning english and never speaking in english. So an idea is important. Linus torvalds idea was to create a UNIX like operating system, so he created it. As you can see idea is the first part, programming comes later. He used his skills to create linux. Similarly Facebook was an idea, so was amazon. So “THINK FIRST CODE LATER”.</p></li>
+<li><p>Time management is very important. There are a gazillion things you can do or learn in computers. After a while you will understand that you cannot learn or do all of them. Find what you are really interested in, prioritise your goals and work towards them.</p></li>
+<li><p>Hackers love to work on challenging problems. They love to challenge themselves.</p></li>
+</ol>
+
+
+<p>Remember, the key to become a hacker is THINKING. Great innovations come not because of someone’s talents/skills, but come’s with their ideas.</p>
+
+<p>Be patient, do what you love you will always succeed.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Exor sum of all non empty subsets in a list]]></title>
@@ -737,30 +786,6 @@ For more on timeit module check the python docs.</p>
 
 <p>This program can find string of any length and replace it with any string. If you have any better program please put it in the comments.
 Change the value of string if you want any custom string, similarly change the find and replace variables.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Trying python in browser]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/09/trying-python-in-browser/"/>
-    <updated>2013-07-09T15:31:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/09/trying-python-in-browser</id>
-    <content type="html"><![CDATA[<p>You can use these sites to test your python code.</p>
-
-<p><a href="http://repl.it">http://repl.it</a></p>
-
-<p><img src="http://Dineshs91.github.io/images/repl.png" /></p>
-
-<p><a href="http://www.codeskulptor.org">http://www.codeskulptor.org</a>
-<img src="http://Dineshs91.github.io/images/codeskulptor.png" /></p>
-
-<p>or try code mirror
-<a href="http://codemirror.net/">http://codemirror.net/</a></p>
-
-<p>skulpt is another program that can run in browser. This is an entirely in browser implementation of python.
-<a href="http://www.skulpt.org/">http://www.skulpt.org/</a></p>
-
-<p>Note: They may not have all the functionalities. Check the documentation for supported features.</p>
 ]]></content>
   </entry>
   

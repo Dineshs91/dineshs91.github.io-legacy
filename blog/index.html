@@ -9,7 +9,7 @@
 
 <meta name="author" content="DINESH S"> 
 
-<meta name="description" content="Consider one bit position at a time. How many of the terms have bit i set? The terms that have bit i set are exactly those that correspond to a &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="I’ve always wondered what it takes to become a great programmer. I kept pondering on this question for a year. I’ve seen programmers around me, &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -105,6 +105,84 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/04/10/a-programmer-or-a-hacker/">
+		
+			A Great Programmer/Hacker</a>
+	</h2>
+	<div class="entry-content">
+		<p>I’ve always wondered what it takes to become a great programmer. I kept pondering on this question for a year. I’ve seen programmers around me, after a lot of research i found that  a programmer becomes a great programmer by following certain ideas. I am laying down some ideas which i think makes a great programmer.</p>
+
+<ol>
+<li>A great programmer always thinks how he can make a computer work the way he wants it to.</li>
+</ol>
+
+
+<p>The definition of Hacker by paul graham: A hacker is a person who can make the computer work the way he want’s it to work.</p>
+
+<ol>
+<li><p>Hackers don’t have a ’no’. This is the difference between a programer and a hacker. Programmer trusts his skill sets and if a problem is beyond his understanding then he will give you a ‘no’. But hackers definitely will find a workaround and they will succeed in that.</p></li>
+<li><p>They write efficient, reliable and readable code naturally. They never think of it in particular.</p></li>
+<li><p>As a child we used to dream a lot of things. But as time goes by we stop dreaming, our imagination becomes zero. For every fascinating thought that comes to our mind, we throw it away saying it’s impossible, such a thing could never happen. This is wrong, imagination is the one thing that has no boundaries, imagination is what brought iPod, iPhone to reality. Explore all dimensions, as steve jobs explored simplicity. Who would have thought simplicity is such an important thing. Don’t take anything for granted. Think why something is designed the way it is.</p></li>
+</ol>
+
+
+<p>To become a hacker.</p>
+
+<ol>
+<li>Don’t program like a fool. Imagination is the key here. Take this example,</li>
+</ol>
+
+
+<p>int a = 10;</p>
+
+<p>Ordinay programmer’s thought: Variable a with value 10</p>
+
+<p>Great programmer’s thought: Variable a with value 10 and takes 2 bytes of memory. He imagines a box with value 10. It occupies some space(which is memory).</p>
+
+<p>It is evident from the example that the difference is the way they think. As you program build something in your mind. This will give you amazing results. Don’t simply program, live with it.</p>
+
+<ol>
+<li><p>You will require a lot of skills. Programming is just the beginning. It is the thinking that is important. Say for example, you have learnt C language. You are an expert in it. But what will you do with it. It’s like learning english and never speaking in english. So an idea is important. Linus torvalds idea was to create a UNIX like operating system, so he created it. As you can see idea is the first part, programming comes later. He used his skills to create linux. Similarly Facebook was an idea, so was amazon. So “THINK FIRST CODE LATER”.</p></li>
+<li><p>Time management is very important. There are a gazillion things you can do or learn in computers. After a while you will understand that you cannot learn or do all of them. Find what you are really interested in, prioritise your goals and work towards them.</p></li>
+<li><p>Hackers love to work on challenging problems. They love to challenge themselves.</p></li>
+</ol>
+
+
+<p>Remember, the key to become a hacker is THINKING. Great innovations come not because of someone’s talents/skills, but come’s with their ideas.</p>
+
+<p>Be patient, do what you love you will always succeed.</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-10T12:57:00+05:30" pubdate data-updated="true">Apr 10<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+</div>
+	
+		<span class="comments"><a href="/blog/2014/04/10/a-programmer-or-a-hacker//blog/index.html#disqus_thread">Comments</a></span>
+	
+</div></article>
 
 
     <article class="post">
@@ -577,104 +655,6 @@ $(document).ready(
 </div>
 	
 		<span class="comments"><a href="/blog/2014/01/23/accessing-property-of-an-element//blog/index.html#disqus_thread">Comments</a></span>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2014/01/14/usage-of-defaultdict/">
-		
-			Usage of Defaultdict</a>
-	</h2>
-	<div class="entry-content">
-		<p>defaultdict is a built in function in python. It is available in collections package.</p>
-
-<p>1.) 1st usage. If you want to know the frequency of characters in a word,</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>from collections import defaultdict
-</span><span class='line'>
-</span><span class='line'>a = “Amazon”
-</span><span class='line'>res = defaultdict(int)
-</span><span class='line'>for k in a:
-</span><span class='line'>    res[k] += 1
-</span><span class='line'>print res</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The result is {&lsquo;A&rsquo;: 1, &rsquo;m&#8217;: 1, &lsquo;a&rsquo;: 1, &lsquo;z&rsquo;: 1, &lsquo;o&rsquo;: 1, &lsquo;n&rsquo;: 1}
-This program is case sensitive so it counts ‘A’ and ‘a’ seperately. If you want the program to be case insensitive just change to a.lower() in for loop.</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>from collections import defaultdict
-</span><span class='line'>
-</span><span class='line'>a = “Amazon”
-</span><span class='line'>res = defaultdict(int)
-</span><span class='line'>for k in a.lower():
-</span><span class='line'>    res[k] += 1
-</span><span class='line'>print res</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The result is {&lsquo;a&rsquo;: 2, &rsquo;m&#8217;: 1, &lsquo;z&rsquo;: 1, &lsquo;o&rsquo;: 1, &lsquo;n&rsquo;: 1}</p>
-
-<p>2.) Using a list in defaultdict.</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>s = [(‘yellow’, 1), (‘blue’, 2), (‘yellow’, 3), (‘blue’, 4)]
-</span><span class='line'>d = defaultdict(list)
-</span><span class='line'>for k, v in s:
-</span><span class='line'>    d[k].append(v)</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The result is [(&lsquo;blue&rsquo;, [2, 4]), (&lsquo;yellow&rsquo;, [1, 3])]</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-14T08:55:00+05:30" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/python/'>python</a>
-
-
-</div>
-	
-		<span class="comments"><a href="/blog/2014/01/14/usage-of-defaultdict//blog/index.html#disqus_thread">Comments</a></span>
 	
 </div></article>
 
