@@ -9,7 +9,6 @@ categories: articles
 I’ve always wondered what it takes to become a great programmer. I kept pondering on this question for a year. I’ve seen programmers around me, after a lot of research i found that  a programmer becomes a great programmer by following certain ideas. I am laying down some ideas which i think makes a great programmer.
 
 1. A great programmer always thinks how he can make a computer work the way he wants it to.
-
 The definition of Hacker by paul graham: A hacker is a person who can make the computer work the way he want’s it to work.
 
 2. Hackers don’t have a ’no’. This is the difference between a programer and a hacker. Programmer trusts his skill sets and if a problem is beyond his understanding then he will give you a ‘no’. But hackers definitely will find a workaround and they will succeed in that.
