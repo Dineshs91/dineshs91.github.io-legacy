@@ -13,10 +13,9 @@ Yes, it's true, a programmer knows what human brain can do.
 
 Most of the programmer's would have got this feeling at some point in their programming
 career, god why is it so hard to write a program, but my brain knows how to do it. Our
-brain does it instantaneously that we don't know what is happening(the actual logic).
-Only if slow down the process, we understand what actually happened.
+brain does it instantaneously, that we don't know what is happening(the actual logic).
+We have to think how our brain does it.
   
-
 For example, take this problem where you have to print whether a 
 given string is a palindrome or not.
 
