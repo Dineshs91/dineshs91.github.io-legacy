@@ -134,14 +134,17 @@ X should contain 1 or more 9&rsquo;s and 0 or more 0&rsquo;s.</p>
 
 <p>algorithm:</p>
 
-<p>j = 1
-while str(bin(j)[2:]).replace(&lsquo;1&rsquo;,&lsquo;9&rsquo;)%n != 0:</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>j = 1
+</span><span class='line'>    while str(bin(j)[2:]).replace('1','9')%n != 0:
+</span><span class='line'>        j += 1
+</span><span class='line'>    s = str(bin(j)[2:]).replace('1','9')
+</span><span class='line'>    print s</span></code></pre></td></tr></table></div></figure>
 
-<pre><code> j += 1
-</code></pre>
-
-<p>s = str(bin(j)[2:]).replace(&lsquo;1&rsquo;,&lsquo;9&rsquo;)
-print s</p>
 
 <p>This will give the least positive integer X made up of only 9&rsquo;s and 0&rsquo;s</p>
 
@@ -165,6 +168,10 @@ print s</p>
 
 <time datetime="2014-05-10T11:57:00+05:30" pubdate data-updated="true">May 10<span>th</span>, 2014</time></div>
 	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/algorithms/'>algorithms</a>
+
 
 </div>
 	
