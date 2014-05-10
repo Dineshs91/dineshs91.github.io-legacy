@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-05-10T12:14:13+05:30</updated>
+  <updated>2014-05-10T12:22:30+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -43,7 +43,7 @@ X should contain 1 or more 9&rsquo;s and 0 or more 0&rsquo;s.</p>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>j = 1
-</span><span class='line'>    while str(bin(j)[2:]).replace('1','9')%n != 0:
+</span><span class='line'>    while int(str(bin(j)[2:]).replace('1','9')) %n != 0:
 </span><span class='line'>        j += 1
 </span><span class='line'>    s = str(bin(j)[2:]).replace('1','9')
 </span><span class='line'>    print s</span></code></pre></td></tr></table></div></figure>
