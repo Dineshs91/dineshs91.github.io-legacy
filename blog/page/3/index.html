@@ -9,8 +9,20 @@
 
 <meta name="author" content="DINESH S"> 
 
-<meta name="description" content="You can use these sites to test your python code. http://repl.it http://www.codeskulptor.org or try code mirror
-http://codemirror.net/ skulpt is &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="find and replace lang: python 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+def find_replace(string, find, replace): len_find = len(find) len_replace = len(replace &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -106,6 +118,80 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/07/13/find-and-replace-in-python/">
+		
+			Find and Replace in Python</a>
+	</h2>
+	<div class="entry-content">
+		
+
+<figure class='code'><figcaption><span>find and replace lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def find_replace(string, find, replace):
+</span><span class='line'>    len_find = len(find)
+</span><span class='line'>    len_replace = len(replace)
+</span><span class='line'>    st = string
+</span><span class='line'>    for i in range(len(string) - len(find) + 1):
+</span><span class='line'>        if string[i:i+len_find] == find:
+</span><span class='line'>            st = st[:i] + replace + st[i+len_find:]
+</span><span class='line'>    return st    
+</span><span class='line'>
+</span><span class='line'>string = 'john'
+</span><span class='line'>find = 'n'
+</span><span class='line'>replace = 'nn'
+</span><span class='line'>print find_replace(string, find, replace)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This program can find string of any length and replace it with any string. If you have any better program please put it in the comments.
+Change the value of string if you want any custom string, similarly change the find and replace variables.</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-13T22:51:00+05:30" pubdate data-updated="true">Jul 13<span>th</span>, 2013</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/python/'>python</a>
+
+
+</div>
+	
+		<span class="comments"><a href="/blog/2013/07/13/find-and-replace-in-python//blog/page/3/index.html#disqus_thread">Comments</a></span>
+	
+</div></article>
 
 
     <article class="post">

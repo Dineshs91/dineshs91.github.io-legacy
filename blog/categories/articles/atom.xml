@@ -4,7 +4,7 @@
   <title><![CDATA[Category: articles | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/articles/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-05-10T12:22:30+05:30</updated>
+  <updated>2014-05-10T13:24:36+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Power of brain]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/05/10/power-of-brain/"/>
+    <updated>2014-05-10T12:56:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/05/10/power-of-brain</id>
+    <content type="html"><![CDATA[<p>While talking about the power of brain, who can understand it better than
+a programmer.</p>
+
+<p>Yes, it&rsquo;s true, a programmer knows what human brain can do.</p>
+
+<p>Most of the programmer&rsquo;s would have got this feeling at some point in their programming
+career, god why is it so hard to write a program, but my brain knows how to do it. Our
+brain does it instantaneously that we don&rsquo;t know what is happening(the actual logic).
+Only if slow down the process, we understand what actually happened.</p>
+
+<p>For example, take this problem where you have to print whether a
+given string is a palindrome or not.</p>
+
+<p>BRAIN:</p>
+
+<p>We can say wether it&rsquo;s a palindrome or not, the second we look at it.</p>
+
+<p>COMPUTER:</p>
+
+<p>You have to write a program to verify that. It takes some thinking.
+Then he writes an algorithm.</p>
+
+<p>You can see that brain is faster than computer.</p>
+
+<p>Hey wait, there is a catch !!</p>
+
+<p>There is a cross over point, after which computer becomes faster than brain.</p>
+
+<p>How? Let&rsquo;s take the same example of palindrome. Maybe for smaller inputs brain
+is faster, but for larger inputs definitely a computer is faster and
+less error prone.</p>
+
+<p>By programming we are just transferring our thinking process to a computer.</p>
+
+<p>So there is nothing more powerful than a human brain in this world.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A great Programmer/Hacker]]></title>
