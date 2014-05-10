@@ -26,7 +26,7 @@ Just replace 1 with '9'.
 algorithm:
 {% codeblock %}
     j = 1
-    while str(bin(j)[2:]).replace('1','9')%n != 0:
+    while int(str(bin(j)[2:]).replace('1','9')) %n != 0:
         j += 1
     s = str(bin(j)[2:]).replace('1','9')
     print s
