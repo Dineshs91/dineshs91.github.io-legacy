@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-04-10T22:10:22+05:30</updated>
+  <updated>2014-05-10T12:09:43+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Increasing pattern in binary]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/05/10/increasing-pattern-in-binary/"/>
+    <updated>2014-05-10T11:57:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/05/10/increasing-pattern-in-binary</id>
+    <content type="html"><![CDATA[<p>An useful trick which depends on the nature of binary numbers.</p>
+
+<p>If we look at them, we can see the following pattern.</p>
+
+<p>0, 1, 10, 11, 100, 101, 110, 111</p>
+
+<p>We can see that they are in increasing order.
+If we are interested in 2 digits, then this trick can come in very handy.
+Take this example,</p>
+
+<p>Find an integer X made up of 9&rsquo;s and 0&rsquo;s such that X is a multiple of N ?
+X should contain 1 or more 9&rsquo;s and 0 or more 0&rsquo;s.</p>
+
+<p>So we could use our trick here.</p>
+
+<p>Just replace 1 with &lsquo;9&rsquo;.</p>
+
+<p>algorithm:</p>
+
+<p>j = 1
+while str(bin(j)[2:]).replace(&lsquo;1&rsquo;,&lsquo;9&rsquo;)%n != 0:</p>
+
+<pre><code> j += 1
+</code></pre>
+
+<p>s = str(bin(j)[2:]).replace(&lsquo;1&rsquo;,&lsquo;9&rsquo;)
+print s</p>
+
+<p>This will give the least positive integer X made up of only 9&rsquo;s and 0&rsquo;s</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A great Programmer/Hacker]]></title>
@@ -760,30 +797,6 @@ For more on timeit module check the python docs.</p>
 
 <p>This program can find string of any length and replace it with any string. If you have any better program please put it in the comments.
 Change the value of string if you want any custom string, similarly change the find and replace variables.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Trying python in browser]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/09/trying-python-in-browser/"/>
-    <updated>2013-07-09T15:31:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/09/trying-python-in-browser</id>
-    <content type="html"><![CDATA[<p>You can use these sites to test your python code.</p>
-
-<p><a href="http://repl.it">http://repl.it</a></p>
-
-<p><img src="http://Dineshs91.github.io/images/repl.png" /></p>
-
-<p><a href="http://www.codeskulptor.org">http://www.codeskulptor.org</a>
-<img src="http://Dineshs91.github.io/images/codeskulptor.png" /></p>
-
-<p>or try code mirror
-<a href="http://codemirror.net/">http://codemirror.net/</a></p>
-
-<p>skulpt is another program that can run in browser. This is an entirely in browser implementation of python.
-<a href="http://www.skulpt.org/">http://www.skulpt.org/</a></p>
-
-<p>Note: They may not have all the functionalities. Check the documentation for supported features.</p>
 ]]></content>
   </entry>
   
