@@ -3,7 +3,7 @@ layout: post
 title: "Increasing pattern in binary"
 date: 2014-05-10 11:57
 comments: true
-categories: 
+categories: algorithms
 ---
 
 An useful trick which depends on the nature of binary numbers.
@@ -24,11 +24,11 @@ So we could use our trick here.
 Just replace 1 with '9'.
 
 algorithm:
-
-j = 1
-while str(bin(j)[2:]).replace('1','9')%n != 0:
-     j += 1
-s = str(bin(j)[2:]).replace('1','9')
-print s
-
+{% codeblock %}
+    j = 1
+    while str(bin(j)[2:]).replace('1','9')%n != 0:
+        j += 1
+    s = str(bin(j)[2:]).replace('1','9')
+    print s
+{% endcodeblock %}
 This will give the least positive integer X made up of only 9's and 0's   
