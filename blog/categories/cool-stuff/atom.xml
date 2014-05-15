@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cool_stuff | My code … :) :)]]></title>
+  <link href="http://Dineshs91.github.io/blog/categories/cool-stuff/atom.xml" rel="self"/>
+  <link href="http://Dineshs91.github.io/"/>
+  <updated>2014-05-16T00:03:10+05:30</updated>
+  <id>http://Dineshs91.github.io/</id>
+  <author>
+    <name><![CDATA[DINESH S]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Fork Bomb]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/05/15/fork-bomb/"/>
+    <updated>2014-05-15T23:47:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/05/15/fork-bomb</id>
+    <content type="html"><![CDATA[<p>Bash fork bomb</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>:(){ :|:&amp; };:</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Once you type this in bash and press enter, your system will crash.
+You have to reboot your system.</p>
+
+<p>:|: &ndash; It will call itself using programming technique called recuresion
+and pipes the output to another call of the function':&lsquo;. The worst part
+is function get called two times to bomb your system.</p>
+
+<p>&amp; &ndash; Puts the function call in the bachground so child cannot die at all
+and start eating system resources.</p>
+
+<p>; &ndash; Terminate the function definition</p>
+
+<p>: &ndash; Call the function aka set the fork() bomb.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-05-10T13:29:54+05:30</updated>
+  <updated>2014-05-16T00:03:10+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fork Bomb]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/05/15/fork-bomb/"/>
+    <updated>2014-05-15T23:47:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/05/15/fork-bomb</id>
+    <content type="html"><![CDATA[<p>Bash fork bomb</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>:(){ :|:& };:</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Once you type this in bash and press enter, your system will crash.
+You have to reboot your system.</p>
+
+<p>:|: &ndash; It will call itself using programming technique called recuresion
+and pipes the output to another call of the function&#8217;:&lsquo;. The worst part
+is function get called two times to bomb your system.</p>
+
+<p>&amp; &ndash; Puts the function call in the bachground so child cannot die at all
+and start eating system resources.</p>
+
+<p>; &ndash; Terminate the function definition</p>
+
+<p>: &ndash; Call the function aka set the fork() bomb.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Power of brain]]></title>
@@ -760,48 +787,6 @@ We divide the number(n) by prime numbers less than half of the number(n/2).</p>
 
 <p>Surely the second program runs faster. Run the program and see for yourself the difference in time between the two.
 If you want the prime numbers just uncomment the line &ldquo;#print primeno&rdquo;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Inspect and timeit module]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/14/inspect-and-timeit-module/"/>
-    <updated>2013-07-14T15:45:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/14/inspect-and-timeit-module</id>
-    <content type="html"><![CDATA[<p>If you ever wondered how a certain function is implemented for ex: gcd(), there is just a module for this. If you want to have a look at the source of a module, you can do it in the following way.</p>
-
-<figure class='code'><figcaption><span>Inspect a module lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>import inspect
-</span><span class='line'>from fractions import gcd
-</span><span class='line'>print inspect.getsource(gcd)</span></code></pre></td></tr></table></div></figure>
-
-
-<p>gcd is used to find the greatest common divisor.
-replace gcd with your own function.</p>
-
-<p>If you want to find the execution time of a function, you can use the timeit module. A simple use of timeit module is shown below.</p>
-
-<figure class='code'><figcaption><span>Timeit module lang: python</span><a href='http://docs.python.org/2/library/timeit.html'>python docs</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>def test():
-</span><span class='line'>    a = 0
-</span><span class='line'>    for i in range(100):
-</span><span class='line'>  a += i
-</span><span class='line'>
-</span><span class='line'>if __name__ == "__main__":
-</span><span class='line'>    print (timeit.timeit("test()", setup="from __main__ import test", number=100))</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The output is the execution time in seconds.
-For more on timeit module check the python docs.</p>
 ]]></content>
   </entry>
   
