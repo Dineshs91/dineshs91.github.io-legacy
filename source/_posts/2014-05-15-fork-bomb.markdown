@@ -3,7 +3,7 @@ layout: post
 title: "Fork Bomb"
 date: 2014-05-15 23:47
 comments: true
-categories: cool_stuff
+categories: coolstuff
 ---
 
 Bash fork bomb
