@@ -4,7 +4,7 @@
   <title><![CDATA[Category: coolstuff | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/coolstuff/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-05-16T00:21:48+05:30</updated>
+  <updated>2014-06-07T23:27:21+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -26,11 +26,11 @@
 <p>Once you type this in bash and press enter, your system will crash.
 You have to reboot your system.</p>
 
-<p>:|: &ndash; It will call itself using programming technique called recuresion
+<p>:|: &ndash; It will call itself using programming technique called recursion
 and pipes the output to another call of the function':&lsquo;. The worst part
 is function get called two times to bomb your system.</p>
 
-<p>&amp; &ndash; Puts the function call in the bachground so child cannot die at all
+<p>&amp; &ndash; Puts the function call in the background so child cannot die at all
 and start eating system resources.</p>
 
 <p>; &ndash; Terminate the function definition</p>
