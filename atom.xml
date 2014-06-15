@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-06-15T15:53:37+05:30</updated>
+  <updated>2014-06-15T16:24:16+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Check dependencies]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/06/15/check-dependencies/"/>
+    <updated>2014-06-15T16:01:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/06/15/check-dependencies</id>
+    <content type="html"><![CDATA[<p>I have seen a lot of projects on github. Almost all of them, just specify the external packages required
+for that project. The bad thing about dependencies is that, it&rsquo;s not enough if you just have that package,
+but you should have a version that the project uses.</p>
+
+<p>Let&rsquo;s take a scenario to understand this better:</p>
+
+<p>Let&rsquo;s say there is a project &lsquo;Ringo&rsquo; in github. I as a developer, decide to contribute to this project.
+The first thing I will do is, fork that project. Then I clone it to my laptop. The next step, I will run
+the test cases to check if everything works. But before, I have to get all of the dependencies. I have to
+check all of the libraries, whether they are there or do I have to update. After checking, I install the
+missing dependencies manually.</p>
+
+<p>what if there are a lot of dependencies ? Now checking each one becomes tedious.</p>
+
+<p>What i suggest:</p>
+
+<p>Create a file, which when executed checks for all the dependencies present in your laptop and displays which
+dependencies you have and which dependencies(with version no.) you need to install.</p>
+
+<p>Advantage:</p>
+
+<p>Let&rsquo;s consider the previous scenario again. After I clone the project to my laptop, the next step I will
+do is, to run the check_dependencies.py file. It displays what versions of dependencies I have and what are
+actually needed for that project. This reduces the manual checking part. I just have to install the
+dependencies that do not match the version used by the project.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My experience with MacBook Pro]]></title>
@@ -645,49 +678,6 @@ You can have a look at <a href="https://github.com/Dineshs91/alphabet-frequency"
 
 
 <p>We are adding 3 to all the numbers in &lsquo;lis&rsquo; and storing in &lsquo;a&rsquo;. If you want to store it in &lsquo;lis&rsquo; itself replace a with lis.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[using modular arithmetic]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/20/using-modular-arithmetic/"/>
-    <updated>2013-07-20T11:13:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/20/using-modular-arithmetic</id>
-    <content type="html"><![CDATA[<p>Using modular arithmetic for various purposes.(In python)</p>
-
-<p>1.) If you want the decimal part of a number use mod operator.</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>>>> pi = 3.14159
-</span><span class='line'>
-</span><span class='line'>>>> pi % 1
-</span><span class='line'>    .14159</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2.) If you want the digit in one&rsquo;s place and the most significant digit.</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = 12
-</span><span class='line'>
-</span><span class='line'>>>> a % 10
-</span><span class='line'>    2
-</span><span class='line'>
-</span><span class='line'>>>> a / 10
-</span><span class='line'>    1</span></code></pre></td></tr></table></div></figure>
-
-
-
 ]]></content>
   </entry>
   

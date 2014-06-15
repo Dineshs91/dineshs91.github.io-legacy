@@ -9,8 +9,8 @@
 
 <meta name="author" content="DINESH S"> 
 
-<meta name="description" content="Exactly a year ago, I got my macbook pro 13’ version. It has a special place in my life.
-Trust me, it made my life easier. I would say, it’s &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="I have seen a lot of projects on github. Almost all of them, just specify the external packages required
+for that project. The bad thing about &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -106,6 +106,72 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/06/15/check-dependencies/">
+		
+			Check Dependencies</a>
+	</h2>
+	<div class="entry-content">
+		<p>I have seen a lot of projects on github. Almost all of them, just specify the external packages required
+for that project. The bad thing about dependencies is that, it&rsquo;s not enough if you just have that package,
+but you should have a version that the project uses.</p>
+
+<p>Let&rsquo;s take a scenario to understand this better:</p>
+
+<p>Let&rsquo;s say there is a project &lsquo;Ringo&rsquo; in github. I as a developer, decide to contribute to this project.
+The first thing I will do is, fork that project. Then I clone it to my laptop. The next step, I will run
+the test cases to check if everything works. But before, I have to get all of the dependencies. I have to
+check all of the libraries, whether they are there or do I have to update. After checking, I install the
+missing dependencies manually.</p>
+
+<p>what if there are a lot of dependencies ? Now checking each one becomes tedious.</p>
+
+<p>What i suggest:</p>
+
+<p>Create a file, which when executed checks for all the dependencies present in your laptop and displays which
+dependencies you have and which dependencies(with version no.) you need to install.</p>
+
+<p>Advantage:</p>
+
+<p>Let&rsquo;s consider the previous scenario again. After I clone the project to my laptop, the next step I will
+do is, to run the check_dependencies.py file. It displays what versions of dependencies I have and what are
+actually needed for that project. This reduces the manual checking part. I just have to install the
+dependencies that do not match the version used by the project.</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-15T16:01:00+05:30" pubdate data-updated="true">Jun 15<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/python/'>python</a>
+
+
+</div>
+	
+		<span class="comments"><a href="/blog/2014/06/15/check-dependencies//blog/index.html#disqus_thread">Comments</a></span>
+	
+</div></article>
 
 
     <article class="post">
@@ -650,52 +716,6 @@ X should contain 1 or more 9&rsquo;s and 0 or more 0&rsquo;s.</p>
 </div>
 	
 		<span class="comments"><a href="/blog/2014/02/01/dynamically-add-rows-to-a-table//blog/index.html#disqus_thread">Comments</a></span>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2014/02/01/serialize-a-form/">
-		
-			Serialize a Form</a>
-	</h2>
-	<div class="entry-content">
-		<p>This method creates a text string in standard URL-encoded notation.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$(‘form’).serialize();</span></code></pre></td></tr></table></div></figure>
-
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-01T00:25:00+05:30" pubdate data-updated="true">Feb 1<span>st</span>, 2014</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/jquery/'>jquery</a>
-
-
-</div>
-	
-		<span class="comments"><a href="/blog/2014/02/01/serialize-a-form//blog/index.html#disqus_thread">Comments</a></span>
 	
 </div></article>
 
