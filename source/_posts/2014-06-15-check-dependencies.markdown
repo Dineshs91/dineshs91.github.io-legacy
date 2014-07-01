@@ -31,3 +31,16 @@ Let's consider the previous scenario again. After I clone the project to my lapt
 do is, to run the check_dependencies.py file. It displays what versions of dependencies I have and what are
 actually needed for that project. This reduces the manual checking part. I just have to install the 
 dependencies that do not match the version used by the project.
+
+You can think that, the projects have a requirements.txt file, is that not sufficient.
+Yes it is sufficient. That is just a text file. But my idea, is more than just text. It can have logic. 
+
+Think about this.
+
+In requirements.txt there is a dependency on python-2.7 and I have python-2.6 in my system. The project will also work for python-2.6. But in requirements they cannot specify 
+that.
+
+So if you do $ pip install -r requirements.txt
+
+you end up installing python-2.7 even though you can work on python-2.6
+I am just taking the same concept to the next level.
