@@ -9,11 +9,8 @@
 
 <meta name="author" content="DINESH S"> 
 
-<meta name="description" content="Using modular arithmetic for various purposes.(In python) 1.) If you want the decimal part of a number use mod operator. lang: python 1
-2
-3
-4
->>> pi &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="List comprehensions are very useful. Here are some examples 1.) Get input and store it in a list lang: python 1
+>>> a = [raw_input() for _ in range( &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -109,6 +106,93 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/07/23/list-comprehension/">
+		
+			List Comprehension</a>
+	</h2>
+	<div class="entry-content">
+		<p>List comprehensions are very useful. Here are some examples</p>
+
+<p>1.) Get input and store it in a list</p>
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = [raw_input() for _ in range(n)]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here &lsquo;n&rsquo; is the number of elements. For example if you want to store 5 names then &lsquo;n&rsquo; is 5.</p>
+
+<p>2.) Convert numbers from a list which are stored in string to int</p>
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = [int(i) for i in lis]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here &lsquo;lis&rsquo; is the list which contains the numbers.</p>
+
+<p>3.) If we want a multidimensional list</p>
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = [ [0 for col in range(5)] for row in range(10)]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This creates a multidimensional list containing 10 rows and 5 columns.</p>
+
+<p>4.) Get the numbers greater than 100 from another list</p>
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = [i for i in lis if i > 100]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&lsquo;lis&rsquo; is the list which contains the numbers. The numbers in list &lsquo;lis&rsquo; which are greater than 100 are added to list &lsquo;a&rsquo;</p>
+
+<p>5.) If you want to add a number to all the numbers in a list</p>
+
+<figure class='code'><figcaption><span>lang: python </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = [i+3 for i in lis]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We are adding 3 to all the numbers in &lsquo;lis&rsquo; and storing in &lsquo;a&rsquo;. If you want to store it in &lsquo;lis&rsquo; itself replace a with lis.</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-23T11:12:00+05:30" pubdate data-updated="true">Jul 23<span>rd</span>, 2013</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/python/'>python</a>
+
+
+</div>
+	
+		<span class="comments"><a href="/blog/2013/07/23/list-comprehension//blog/page/3/index.html#disqus_thread">Comments</a></span>
+	
+</div></article>
 
 
     <article class="post">

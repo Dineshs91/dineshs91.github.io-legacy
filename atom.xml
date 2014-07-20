@@ -4,7 +4,7 @@
   <title><![CDATA[My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-07-01T21:57:52+05:30</updated>
+  <updated>2014-07-20T16:47:35+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Where is equal opportunity in this world ??]]></title>
+    <link href="http://Dineshs91.github.io/blog/2014/07/20/equal-opportunity/"/>
+    <updated>2014-07-20T16:28:00+05:30</updated>
+    <id>http://Dineshs91.github.io/blog/2014/07/20/equal-opportunity</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been looking at jobs section in a number of websites and I found out something interesting. All of them
+have outlined the skills they are looking for, the amount of experience needed etc. And the dumbest requirement I
+found is a degree in computer science, worst of all some sites mentioned that a degree in computer science from
+premium institutes is neede. This is absolutely insane. Analyzing their needs it&rsquo;s very clear that equal
+opportunity is not given. They are clearly biased towards some institutions. They think that people who do their
+degree&rsquo;s in those premium institutes are the best ones and the students who do their degree&rsquo;s in other institutions
+are worthless.</p>
+
+<p>It makes me very sad to see how the world is being shaped. Do grade&rsquo;s have anything to do with skill. I think
+it&rsquo;s not. There are some people in the world who just don&rsquo;t care about grade&rsquo;s, but care very much about knowledge.
+There are brilliant people from other universities also. The number can be less, but still they are clearly ignoring
+talent. They don&rsquo;t want to take pain. They just want to take the well known path.</p>
+
+<p>I very much believe that education has nothing to do with a person&rsquo;s skill/talent. All that is required is the
+right thinking and motivation. The whole world is driven by money, who want&rsquo;s to risk it. So they want to hire
+people from premium institutions.</p>
+
+<p>First entrepreneurs thinking should change. They are filtering people in wrong ways.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Check dependencies]]></title>
@@ -637,60 +663,6 @@ You can have a look at <a href="https://github.com/Dineshs91/alphabet-frequency"
 
 
 <p>If you want to use sorting in your program always use the builtin function &lsquo;sort&rsquo;. It is always efficient than what we can write.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[List comprehension]]></title>
-    <link href="http://Dineshs91.github.io/blog/2013/07/23/list-comprehension/"/>
-    <updated>2013-07-23T11:12:00+05:30</updated>
-    <id>http://Dineshs91.github.io/blog/2013/07/23/list-comprehension</id>
-    <content type="html"><![CDATA[<p>List comprehensions are very useful. Here are some examples</p>
-
-<p>1.) Get input and store it in a list</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = [raw_input() for _ in range(n)]</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here &lsquo;n&rsquo; is the number of elements. For example if you want to store 5 names then &lsquo;n&rsquo; is 5.</p>
-
-<p>2.) Convert numbers from a list which are stored in string to int</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = [int(i) for i in lis]</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here &lsquo;lis&rsquo; is the list which contains the numbers.</p>
-
-<p>3.) If we want a multidimensional list</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = [ [0 for col in range(5)] for row in range(10)]</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This creates a multidimensional list containing 10 rows and 5 columns.</p>
-
-<p>4.) Get the numbers greater than 100 from another list</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = [i for i in lis if i > 100]</span></code></pre></td></tr></table></div></figure>
-
-
-<p>&lsquo;lis&rsquo; is the list which contains the numbers. The numbers in list &lsquo;lis&rsquo; which are greater than 100 are added to list &lsquo;a&rsquo;</p>
-
-<p>5.) If you want to add a number to all the numbers in a list</p>
-
-<figure class='code'><figcaption><span>lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>>>> a = [i+3 for i in lis]</span></code></pre></td></tr></table></div></figure>
-
-
-<p>We are adding 3 to all the numbers in &lsquo;lis&rsquo; and storing in &lsquo;a&rsquo;. If you want to store it in &lsquo;lis&rsquo; itself replace a with lis.</p>
 ]]></content>
   </entry>
   
