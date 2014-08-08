@@ -9,10 +9,19 @@
 
 <meta name="author" content="DINESH S"> 
 
-<meta name="description" content="If you want to dynamically add rows to an existing table use clone. 1
+<meta name="description" content="Sieve of eratosthenes is used to find the prime numbers. 1
 2
-tr = $(‘table tbody tr:last’).clone();
-tr.appendTo($(‘table’)); This adds &hellip;"> <meta name="keywords" content="">
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+def sieve(limit): p = [True] * limit p[0] = p[1] = False for i, &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -108,6 +117,124 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/09/sieve-of-eratosthenes/">
+		
+			Sieve of Eratosthenes</a>
+	</h2>
+	<div class="entry-content">
+		<p>Sieve of eratosthenes is used to find the prime numbers.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def sieve(limit):
+</span><span class='line'>    p = [True] * limit
+</span><span class='line'>    p[0] = p[1] = False
+</span><span class='line'>    for i, isprime in enumerate(p):
+</span><span class='line'>        if isprime:
+</span><span class='line'>            for n in xrange(i * i, limit, i):
+</span><span class='line'>                p[n] = False
+</span><span class='line'>    return p
+</span><span class='line'>
+</span><span class='line'>p = sieve(100)
+</span><span class='line'>for i, j in enumerate(p):
+</span><span class='line'>    print i,’—>’,j</span></code></pre></td></tr></table></div></figure>
+
+
+<p>sieve(100) &ndash; Has a list of first 100 numbers and whether they are prime or not.</p>
+
+<p>Runtime: O(log log n)</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-09T14:02:00+05:30" pubdate data-updated="true">Mar 9<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/python/'>python</a>
+
+
+</div>
+	
+		<span class="comments"><a href="/blog/2014/03/09/sieve-of-eratosthenes//blog/page/2/index.html#disqus_thread">Comments</a></span>
+	
+</div></article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/02/01/bfs/">
+		
+			BFS</a>
+	</h2>
+	<div class="entry-content">
+		<p>Breadth First Search (BFS).</p>
+
+<p>BFS explores in levels. It explores all the nodes and then moves to the next node unlike DFS which explores the nodes of siblings until a node doesn’t have a sibling. BFS moves like a wave. Here a queue is used.</p>
+
+<p>The path found using BFS is the shortest path. BFS takes less time than DFS to explore. But it can take more memory which depends on the branching factor.</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-01T00:44:00+05:30" pubdate data-updated="true">Feb 1<span>st</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/algorithms/'>algorithms</a>
+
+
+</div>
+	
+		<span class="comments"><a href="/blog/2014/02/01/bfs//blog/page/2/index.html#disqus_thread">Comments</a></span>
+	
+</div></article>
 
 
     <article class="post">
@@ -616,175 +743,6 @@ You can have a look at <a href="https://github.com/Dineshs91/alphabet-frequency"
 </div>
 	
 		<span class="comments"><a href="/blog/2013/08/07/alphabet-frequency//blog/page/2/index.html#disqus_thread">Comments</a></span>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/08/07/trying-google-app-engine/">
-		
-			Trying Google App Engine</a>
-	</h2>
-	<div class="entry-content">
-		<p>If you are learning python then you got to try google app engine(GAE). Google app engine provides a infrastructure for hosting your web app. You must be knowing some html to play with it. If you have a google account, well and good otherwise create it. You need it to host your web app. Download google app engine(python) to your computer. This lets you test your app locally. You can deploy directly from the software itself. There is a course in udacity which teaches web development. It teaches it with the help of GAE If you want to have greater insight into the topic check the google developer site. You can use 10 apps for free and after that you have to pay. Creating a web app can be fun way to explore both python and web development. I agree that GAE doesn&rsquo;t require complex python but it&rsquo;s worth  a try if you are interested in web development.</p>
-
-<p>Note: Use GAE for python.</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-07T15:10:00+05:30" pubdate data-updated="true">Aug 7<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/python/'>python</a>
-
-
-</div>
-	
-		<span class="comments"><a href="/blog/2013/08/07/trying-google-app-engine//blog/page/2/index.html#disqus_thread">Comments</a></span>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/07/23/merge-sort/">
-		
-			Merge Sort</a>
-	</h2>
-	<div class="entry-content">
-		<p>Merge sort is a sorting method which uses divide and conquer algorithm. It has a running time of big oh O(N log N).</p>
-
-<figure class='code'><figcaption><span>Merge sort lang: python </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#! /usr/bin/env python
-</span><span class='line'>
-</span><span class='line'>## Program for merge sort
-</span><span class='line'>
-</span><span class='line'>def divide(array):
-</span><span class='line'>    if len(array) &lt; 2:
-</span><span class='line'>        return array
-</span><span class='line'>    length = len(array)
-</span><span class='line'>    left = array[:length/2]
-</span><span class='line'>    right = array[length/2:]
-</span><span class='line'>    left = divide(left)
-</span><span class='line'>    right = divide(right)
-</span><span class='line'>    #print left, right
-</span><span class='line'>    sort_array = []
-</span><span class='line'>    i = 0
-</span><span class='line'>    j = 0
-</span><span class='line'>    while i &lt; len(left) and j &lt; len(right):
-</span><span class='line'>        if left[i] &lt;= right[j]:
-</span><span class='line'>            sort_array.append(left[i])
-</span><span class='line'>            i += 1
-</span><span class='line'>        else:
-</span><span class='line'>            sort_array.append(right[j])
-</span><span class='line'>            j += 1
-</span><span class='line'>    while i &lt; len(left):
-</span><span class='line'>        sort_array.append(left[i])
-</span><span class='line'>        i += 1
-</span><span class='line'>    while j &lt; len(right):
-</span><span class='line'>        sort_array.append(right[j])
-</span><span class='line'>        j += 1
-</span><span class='line'>    return sort_array
-</span><span class='line'>            
-</span><span class='line'>def main():
-</span><span class='line'>    array = raw_input("Enter the numbers to be sorted:")
-</span><span class='line'>    array = [int(i) for i in array.split()]
-</span><span class='line'>    sort_array = divide(array)
-</span><span class='line'>    print sort_array
-</span><span class='line'>
-</span><span class='line'>if __name__ == "__main__":
-</span><span class='line'>    main()</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If you want to use sorting in your program always use the builtin function &lsquo;sort&rsquo;. It is always efficient than what we can write.</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-23T14:38:00+05:30" pubdate data-updated="true">Jul 23<span>rd</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/python/'>python</a>
-
-
-</div>
-	
-		<span class="comments"><a href="/blog/2013/07/23/merge-sort//blog/page/2/index.html#disqus_thread">Comments</a></span>
 	
 </div></article>
 
