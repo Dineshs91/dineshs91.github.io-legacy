@@ -4,7 +4,7 @@
   <title><![CDATA[Category: algorithms | My code … :) :)]]></title>
   <link href="http://Dineshs91.github.io/blog/categories/algorithms/atom.xml" rel="self"/>
   <link href="http://Dineshs91.github.io/"/>
-  <updated>2014-08-08T22:55:53+05:30</updated>
+  <updated>2014-08-08T23:10:07+05:30</updated>
   <id>http://Dineshs91.github.io/</id>
   <author>
     <name><![CDATA[DINESH S]]></name>
@@ -23,39 +23,35 @@
 <p>The first and foremost thing, if you start coding as soon as you finish reading the
 problem, you will never get it right.</p>
 
-<p>So the first tip:
-1. Think first code later.</p>
-
-<p>Don’t even start coding if you don’t have a proper picture of the solution to the
-problem.</p>
+<p>So the first tip:</p>
 
 <ol>
+<li><p>Think first code later.
+Don’t even start coding if you don’t have a proper picture of the solution to the
+problem.</p></li>
 <li><p>Use appropriate names for your variables, functions and classes. This is important.
 This shows that you care about other programmers.</p></li>
 <li><p>Try to find an efficient way of solving the problem at hand. Never settle with the
 solution you come up with first. Think again.</p></li>
 <li><p>If the problem involves numbers, think if sorting could help. Honestly, this
 has helped me a lot of times. Sometimes you would have to come up with a different kind
-of sorting. I will explain this with an example.</p></li>
-</ol>
+of sorting. I will explain this with an example.</p>
 
+<p> Ex:
+ Say you are inserting numbers in an array and after inserting, you’re solution needs
+ sorting. There are two ways of doing it.</p>
 
-<p>Ex:
-Say you are inserting numbers in an array and after inserting, you’re solution needs
-sorting. There are two ways of doing it.</p>
+<p> Soln 1:
+ You can first insert all the numbers and then sort.</p>
 
-<p>Soln 1:
-You can first insert all the numbers and then sort.</p>
+<p> Soln 2:
+ You can insert elements so that they are sorted. In python see bisect module.
+ You do this by inserting the elements in the correct positions in the array,
+ so that after inserting, the array is sorted.</p>
 
-<p>Soln 2:
-You can insert elements so that they are sorted. In python see bisect module.
-You do this by inserting the elements in the correct positions in the array,
-so that after inserting, the array is sorted.</p>
-
-<p>Here soln 2 is efficient.</p>
-
-<ol>
-<li>If you’re stuck with a problem, look at it in a different perspective. It happens that, you just think of the same thing, again and again.</li>
+<p> Here soln 2 is efficient.</p></li>
+<li><p>If you’re stuck with a problem, look at it in a different perspective. It happens that,   <br/>
+you just think of the same thing, again and again.</p></li>
 </ol>
 
 ]]></content>
