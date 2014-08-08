@@ -20,7 +20,7 @@ There are brilliant people from other universities also. The number can be less,
 talent. They don't want to take pain. They just want to take the well known path.  
 
 I very much believe that education has nothing to do with a person's skill/talent. All that is required is the 
-right thinking and motivation. The whole world is driven by money, who want's to risk it. So they want to hire 
-people from premium institutions.
+right thinking and motivation. The whole world is driven by money, who want's to risk it. They just hire people from premium institutions, just to be on the safer side.
 
-First entrepreneurs thinking should change. They are filtering people in wrong ways. 
+First entrepreneurs thinking should change. They are filtering people in wrong ways. It’s absolutely fine if you reject someone in an interview, but rejecting at the first step, is 
+bad. Hope this situation changes.
